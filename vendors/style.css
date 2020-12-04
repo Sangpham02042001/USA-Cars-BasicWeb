@@ -1,0 +1,1687 @@
+:root {
+  --white-color: #ffffff;
+  --text-color: #242323;
+  --red-color: #c4212a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* -------------------------- MIXIN --------------- */
+@keyframes header_link_animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+.rotateReverse {
+  transform: rotate(-180deg);
+  transition: all 0.5s;
+}
+
+/*---------------------------------HEADER ------------------- */
+.header {
+  display: flex;
+  background-color: #111111;
+  /* padding: 16px; */
+  align-items: center;
+  position: relative;
+}
+.header .header__img_link {
+  margin: 16px 0 16px 16px;
+  padding-right: 18px;
+}
+.header .header__img_link .header__img {
+  max-width: 120px;
+}
+.header .header__title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-right: 8px;
+  font-weight: 600;
+}
+.header .header__title:hover {
+  color: #ccc9c9;
+}
+.header .header__title .header__title_span {
+  position: relative;
+  top: -1px;
+  left: 3px;
+  font-size: 1.6rem;
+}
+.header .header__list {
+  display: flex;
+  align-items: center;
+}
+.header .header__list .header__list-item {
+  display: block;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.header .header__list .header__list-item:hover ::after {
+  display: block;
+}
+.header .header__list .header__list-item:hover .header__item-dropdown {
+  display: flex;
+}
+.header .header__list .header__list-item:hover .header__item-dropdown ::after {
+  display: none;
+}
+.header .header__list .header__list-item ::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  animation: header_link_animation ease-in-out 0.4s;
+  margin: 0 auto;
+  background-color: #e61010;
+  top: 94%;
+  left: 10%;
+  -webkit-animation: header_link_animation ease-in-out 0.4s;
+}
+.header .header__list .header__list-item .header__list-item-link {
+  position: relative;
+  padding: 24px 14px;
+  top: -3px;
+}
+.header .header__list .header__list-item .header__list-item-link:hover {
+  color: #ccc9c9;
+}
+.header .header__list .header__list-item .header__item-dropdown {
+  position: absolute;
+  top: 100%;
+  display: none;
+  z-index: 1;
+  flex-direction: column;
+  background-color: var(--white-color);
+  width: 260px;
+  border: 1px solid #c7c4c4;
+  box-shadow: 0px 0px 1 px;
+  border-top: none;
+  padding: 15px 15px 0 15px;
+}
+.header .header__list .header__list-item .header__item-dropdown .header__dropdown-item {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+.header .header__list .header__list-item .header__item-dropdown .header__dropdown-item:hover {
+  color: #ccc9c9;
+}
+.header .header__list .header__list-item .header__item-dropdown::after {
+  display: none;
+}
+.header .header__menu {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+}
+.header .header__menu:hover {
+  color: #ccc9c9;
+}
+.header .header__menu .header__menu_bar {
+  width: 18px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+}
+
+.intro {
+  position: relative;
+  min-height: 300px;
+}
+.intro .intro-video {
+  width: 100%;
+}
+.intro .intro-content {
+  top: 30%;
+  width: 60%;
+  left: 15%;
+  position: absolute;
+  display: flex;
+}
+.intro .intro-content .intro-img {
+  max-width: 140px;
+}
+.intro .intro-content .intro__content-text {
+  display: flex;
+  flex-direction: column;
+}
+.intro .intro-content .intro__content-text .intro__heading {
+  font-size: 4rem;
+  color: var(--white-color);
+}
+.intro .intro-content .intro__content-text .intro__text {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: var(--white-color);
+}
+
+/* --------------------- CONTAINER1 ------------------- */
+.container {
+  width: 80%;
+  min-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.container .menu {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #a7a6a6;
+  transform: translateY(-70%);
+}
+.container .menu .menu__btn {
+  display: flex;
+}
+.container .menu .menu__btn .reviews__button {
+  margin-right: 10px;
+  border-top: 3px solid red;
+}
+.container .menu .menu__btn button {
+  color: var(--white-color);
+  background-color: #333333;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+.container .menu .menu__navbar {
+  width: 100%;
+  background-color: #333333;
+  padding: 15px;
+  display: flex;
+}
+.container .menu .menu__navbar select {
+  padding: 15px;
+  flex: 1;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-collapse: collapse;
+}
+.container .menu .menu__navbar select option {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.container .menu .menu__navbar input {
+  flex: 1;
+  font-size: 1.4rem;
+  padding: 15px;
+  border: none;
+  outline: none;
+  display: none;
+}
+.container .menu .menu__navbar .search {
+  border: none;
+  outline: none;
+  padding: 15px;
+  color: var(--white-color);
+  font-weight: 800;
+  border-radius: 0 5px 5px 0;
+  flex: 1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: red;
+}
+.container .menu .menu__navbar .search:hover {
+  background-color: #ce2b2b;
+}
+
+.menu__btn_style1 {
+  border: none !important;
+  border-top: 3px solid red !important;
+  background-color: #333333 !important;
+}
+
+.menu__btn_style2 {
+  border-top: none !important;
+  background-color: black !important;
+  border: 1px solid #adacac !important;
+}
+
+/* ------------------------- CAR RANKINGS ----------------- */
+.best-car-rankings .best-car-rankings-header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.best-car-rankings .best-car-rankings-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.best-car-rankings .car-ranking-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item {
+  display: flex;
+  flex-direction: column;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text {
+  width: 100%;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .car-ranking-header {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--red-color);
+  font-weight: 600;
+  padding: 16px;
+  text-align: center;
+  transition: color 0.3s;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .car-ranking-header:hover {
+  color: #94060d;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car a {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car a:hover {
+  color: #8f8e8e;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking {
+  text-align: center;
+  padding-top: 12px;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking a {
+  color: black;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking a:hover {
+  color: #8f8e8e;
+}
+.best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking a span {
+  font-size: 1.4rem;
+  position: relative;
+  top: -1px;
+}
+
+/*-------------------- USED-AWARD-------------- */
+.used__award {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+}
+.used__award .used__award-heading {
+  font-size: 2.6rem;
+}
+.used__award .used__award-text {
+  font-size: 1.6rem;
+  color: #8f8e8e;
+  margin: 20px 0;
+  max-width: 380px;
+}
+.used__award .used-car-rankings {
+  margin-bottom: 50px;
+}
+.used__award .used-car-rankings .used_car-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+}
+.used__award .used-car-rankings .used_car-list .used_car__list-item {
+  color: var(--text-color);
+  display: block;
+  font-size: 1.6rem;
+}
+.used__award .used-car-rankings .used_car-list .used_car__list-item:hover {
+  color: #757373;
+}
+.used__award .used-car-rankings .used_car-list :last-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.used__award .used-car-rankings .used_car-list :last-child span {
+  font-size: 1.4rem;
+  position: relative;
+  top: -1px;
+}
+.used__award .best-car-award .best-car-award-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.used__award .best-car-award .best-car-award-list .best-car-award-list-left {
+  display: grid;
+}
+.used__award .best-car-award .best-car-award-list .best-car-award-list-left .best-car-award-list-item {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+.used__award .best-car-award .best-car-award-list .best-car-award-list-left .best-car-award-list-item:hover {
+  color: #8f8e8e;
+}
+.used__award .best-car-award .best-car-award-list .best-car-award-img img {
+  max-width: 120px;
+  cursor: pointer;
+}
+.used__award .advertisement {
+  font-size: 1rem;
+  color: #8f8e8e;
+  width: 30%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* --------------------------- BROWSE BY STYLE ------------ */
+.browse__style {
+  margin-top: 30px;
+}
+.browse__style .browse__style-header {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding-top: 10px;
+  position: relative;
+}
+.browse__style .browse__style-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.browse__style .browse__style-list {
+  width: 60%;
+  display: grid;
+  padding: 30px 0 30px 0px;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.browse__style .browse__style-list .browse__style-item .browse__style-item-img {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.browse__style .browse__style-list .browse__style-item .browse__style-item-link {
+  color: #333333;
+  max-width: 120px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+}
+.browse__style .browse__style-list .browse__style-item .browse__style-item-link:hover {
+  color: #8f8e8e;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#modal #modalImg {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  animation: zoom 0.6s;
+  width: 600px;
+}
+#modal .close {
+  position: fixed;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* --------------------PRICE PROGRAM ---------------------- */
+.price-program {
+  background-color: #f7f7f7;
+  width: 100%;
+}
+.price-program .price-program-content {
+  display: flex;
+  width: 86%;
+  min-width: 1212px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.price-program .price-program-content .best-price_program {
+  flex: 3;
+  padding: 20px 60px 20px 0;
+}
+.price-program .price-program-content .best-price_program .best-price__program-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.price-program .price-program-content .best-price_program .best-price__program-header div .best-price__program-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.price-program .price-program-content .best-price_program .best-price__program-header div .best-price__program-header-text {
+  font-size: 2rem;
+}
+.price-program .price-program-content .best-price_program .best-price__program-header .best-price-program-img {
+  display: block;
+  margin-top: 20px;
+  width: 110px;
+}
+.price-program .price-program-content .best-price_program .best-price__program-des {
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 1.2;
+  padding-left: 15px;
+  color: #686767;
+  border-left: 3px solid red;
+  margin-bottom: 20px;
+}
+.price-program .price-program-content .best-price_program .best-price__program-note {
+  display: flex;
+}
+.price-program .price-program-content .best-price_program .best-price__program-note i {
+  color: #94060d;
+  font-size: 1.6rem;
+  margin-right: 10px;
+  display: block;
+}
+.price-program .price-program-content .best-price_program .best-price__program-note p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.price-program .price-program-content .program {
+  flex: 2;
+  background-color: white;
+  border: 1px solid #a8a7a7;
+  border-top: 3px solid red;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.price-program .price-program-content .program .program-list {
+  height: 85%;
+  padding: 40px;
+}
+.price-program .price-program-content .program .program-list .program-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.price-program .price-program-content .program .program-list .program-item .program-item-logo {
+  position: relative;
+  top: -10px;
+  font-size: 4rem;
+  margin-right: 15px;
+  color: #757373;
+}
+.price-program .price-program-content .program .program-list .program-item .program-item-des .program-item-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.price-program .price-program-content .program .program-list .program-item .program-item-des .program-item-text {
+  font-size: 1.4rem;
+  color: #757373;
+}
+.price-program .price-program-content .program__btn {
+  width: 100%;
+  height: 15%;
+  background-color: red;
+  border: none;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.price-program .price-program-content .program__btn:hover {
+  background-color: #94060d;
+}
+
+/* ------------------------------ BROWSE BRAND -------------- */
+.browse-brand {
+  padding-top: 30px;
+}
+.browse-brand .browse-brand-header {
+  font-size: 2.6rem;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.browse-brand .browse-brand-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.browse-brand .browse-brand-list {
+  display: grid;
+  margin-bottom: 20px;
+  width: 60%;
+  row-gap: 20px;
+  grid-template-columns: auto auto auto auto auto;
+}
+.browse-brand .browse-brand-list .browsw-brand-item-link {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+.browse-brand .browse-brand-list .browsw-brand-item-link:hover {
+  color: #757373;
+}
+
+/* --------------- NOVEMBER DEALS ------------------ */
+.november_deals {
+  padding-top: 30px;
+}
+.november_deals .novemer_deals-header {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.november_deals .novemer_deals-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.november_deals .november_deals-text {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.november_deals .november_deals-list {
+  display: flex;
+}
+.november_deals .november_deals-list .november_deals-item {
+  cursor: pointer;
+  margin: 0 25px 20px 0;
+  border: 1px solid #b3b0b0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: box-shadow 0.3s;
+  flex: 1;
+}
+.november_deals .november_deals-list .november_deals-item:hover {
+  box-shadow: 0 0 3px 1px #adacac;
+}
+.november_deals .november_deals-list .november_deals-item .november_deals-item-img {
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+.november_deals .november_deals-list .november_deals-item .november_deals-item-header {
+  font-size: 2.4rem;
+  padding: 20px 0;
+  text-align: center;
+}
+.november_deals .november_deals-list .november_deals-item-last {
+  width: 23%;
+  border-top: 3px solid black;
+}
+.november_deals .november_deals-list .november_deals-item-last .item-last-header {
+  font-size: 2rem;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.november_deals .november_deals-list .november_deals-item-last .content-last-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 22px;
+}
+.november_deals .november_deals-list .november_deals-item-last .content-last-list .content-last-list-item {
+  color: black;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+.november_deals .november_deals-list .november_deals-item-last .content-last-list .content-last-list-item:hover {
+  color: #757373;
+}
+.november_deals .november_deals-list .november_deals-item-last .content-last-list :last-child {
+  font-weight: 600;
+}
+.november_deals .november_deals-list .november_deals-item-last .content-last-list :last-child span {
+  position: relative;
+  top: -3px;
+  font-size: 1.2rem;
+}
+
+/* --------------------------------------------- */
+.car_insurance {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.car_insurance .car_insurance-header {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.car_insurance .car_insurance-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.car_insurance .car_insurance-list {
+  display: flex;
+}
+.car_insurance .car_insurance-list .car_insurance-item {
+  flex: 1;
+  cursor: pointer;
+  margin: 0 25px 20px 0;
+  border: 1px solid #b3b0b0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: box-shadow 0.3s;
+}
+.car_insurance .car_insurance-list .car_insurance-item:hover {
+  box-shadow: 0 0 3px 1px #adacac;
+}
+.car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-logo {
+  padding: 40px;
+  text-align: center;
+}
+.car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-logo i {
+  font-size: 5rem;
+  color: #2f78cc;
+}
+.car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-header {
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #b3b0b0;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last {
+  width: 23%;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc {
+  border-top: 3px solid black;
+  margin-bottom: 30px;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 25px;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list .car_insurance-item-last-link {
+  color: black;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list .car_insurance-item-last-link:hover {
+  color: #757373;
+}
+.car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list :last-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------- */
+.car_buying-advice .car_advice-heading {
+  position: relative;
+  display: flex;
+}
+.car_buying-advice .car_advice-heading .car_advice-header {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.car_buying-advice .car_advice-heading .car_advice-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.car_buying-advice .car_advice-heading .car_advice-link {
+  position: absolute;
+  color: black;
+  font-size: 1.6rem;
+  right: 10px;
+  top: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.car_buying-advice .car_advice-heading .car_advice-link span {
+  font-size: 1.4rem;
+}
+.car_buying-advice .car_advice-heading .car_advice-link:hover {
+  color: #757373;
+}
+.car_buying-advice .car_advice-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.car_buying-advice .car_advice-content .car_advice-list {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.car_buying-advice .car_advice-content .car_advice-list h1 {
+  color: var(--white-color);
+  font-size: 2.8rem;
+}
+.car_buying-advice .car_advice-content .car_advice-list h1:hover {
+  color: #dbd8d8;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large {
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 380px;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 3px 2px #757373;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text p {
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 2rem;
+  display: block;
+  transition: color 0.4s;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text p:hover {
+  color: #dbd8d8;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list {
+  display: flex;
+  justify-content: space-between;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 48%;
+  color: var(--white-color);
+  font-size: 3rem;
+  font-weight: 600;
+  height: 270px;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small .car_advice_img-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80%;
+}
+.car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small:hover {
+  color: #dbd8d8;
+}
+
+/* ---------------------------------- */
+.advice_list_more {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.advice_list_more .advice_list_header {
+  font-size: 2.4rem;
+}
+.advice_list_more .advice_list {
+  padding: 20px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 18px;
+}
+.advice_list_more .advice_list .advice_list_item {
+  color: black;
+  font-size: 1.6rem;
+}
+.advice_list_more .advice_list .advice_list_item:hover {
+  color: #686767;
+}
+.advice_list_more .see_more_advice {
+  color: black;
+  font-size: 1.5rem;
+  word-spacing: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.advice_list_more .see_more_advice span {
+  font-size: 1.2rem;
+}
+
+/* ------------------------- */
+.cars_list {
+  border-top: 1px solid #757373;
+  padding-top: 50px;
+}
+.cars_list .best_cars_list {
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+}
+.cars_list .best_cars_list .best_cars_list-col {
+  flex: 1;
+}
+.cars_list .best_cars_list .cars_col-list {
+  list-style-type: none;
+}
+.cars_list .cars_col-header {
+  color: #ec2a2a;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+.cars_list .cars_col-list-link {
+  color: black;
+  font-size: 1.6rem;
+  padding: 10px 0;
+  display: block;
+  transition: color 0.3s;
+}
+.cars_list .cars_col-list-link:hover {
+  color: #757373;
+}
+.cars_list .popular__cars-sale {
+  display: flex;
+}
+.cars_list .popular__cars-sale .popular__cars_sale-col {
+  flex: 1;
+  margin-bottom: 50px;
+}
+.cars_list .popular__cars-sale .popular__cars_sale-col .popular__cars-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+}
+
+/*------------------------------------- */
+footer {
+  background-color: black;
+  padding: 30px 0;
+}
+footer .footer__list {
+  width: 80%;
+  min-width: 1212px;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  display: flex;
+}
+footer .footer__list .footer__list-item {
+  flex: 1;
+}
+footer .footer__list .footer__list-item .footer__col_header {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .footer__list .footer__list-item .footer__list-col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+footer .footer__list .footer__list-item .footer__list-col .footer_list_link {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+footer .footer__list .footer__list-item p {
+  color: var(--white-color);
+  display: block;
+  font-size: 1.2rem;
+  max-width: 180px;
+  padding: 5px 0;
+}
+footer .footer {
+  display: flex;
+  width: 80%;
+  min-width: 1212px;
+  margin: 30px auto 0 auto;
+}
+footer .footer .footer__img {
+  max-width: 180px;
+  margin-right: 20px;
+}
+footer .footer .footer__info .footer__info-link {
+  font-size: 1.4rem;
+  margin-right: 20px;
+}
+footer .footer .footer__info div {
+  display: flex;
+}
+footer .footer .footer__info div p {
+  margin-top: 15px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+footer .footer .footer__info div .footer__link-benifit {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+footer .footer .footer__logo {
+  padding: 10px 30px;
+  color: white;
+}
+footer .footer .footer__logo i {
+  font-size: 3rem;
+  margin-right: 20px;
+}
+
+.select__list {
+  display: none;
+  width: 100%;
+}
+.select__list .select__button {
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  padding: 16px;
+  text-align: left;
+}
+.select__list .select__button span i {
+  font-size: 2.2rem;
+  color: #757373;
+  position: absolute;
+  right: 20px;
+  transition: 0.4s;
+  top: 30%;
+}
+.select__list .select__dropdown {
+  padding-bottom: 30px;
+}
+.select__list .select__dropdown .select__dropdown-item {
+  padding: 12px;
+}
+.select__list .select__dropdown .select__dropdown-item .dropdown-item__link {
+  color: black;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .intro .intro-content {
+    top: 10%;
+    left: 20%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro .intro-content .intro-img-div {
+    text-align: center;
+  }
+
+  .container {
+    min-width: 96%;
+    margin: 0 auto;
+  }
+
+  .price-program .price-program-content {
+    min-width: 96%;
+  }
+
+  footer .footer__list {
+    min-width: 96%;
+  }
+  footer .footer {
+    min-width: 96%;
+  }
+  footer .footer .footer-2 {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header .header__list {
+    display: none;
+  }
+
+  .intro .intro-content .intro__content-text .intro__heading {
+    font-size: 2.6rem;
+  }
+  .intro .intro-content .intro__content-text .intro__text {
+    font-size: 1.6rem;
+  }
+
+  .select__list {
+    display: block;
+  }
+
+  .container .menu .menu__btn button {
+    width: 50%;
+  }
+  .container .best-car-rankings .car-ranking-list {
+    padding-right: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item {
+    flex-direction: row-reverse;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
+    max-width: 180px;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .car-ranking-header {
+    padding-left: 0;
+    text-align: left;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
+    text-align: left;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking {
+    text-align: left;
+  }
+  .container .used__award {
+    flex-direction: column;
+    width: 50%;
+  }
+  .container .used__award .advertisement {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+  .container .browse__style .browse__style-list {
+    width: 100%;
+  }
+  .container .browse-brand .browse-brand-list {
+    width: 50%;
+    grid-template-columns: auto auto auto;
+  }
+
+  .price-program .price-program-content {
+    flex-direction: column;
+    min-width: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .price-program .price-program-content .best-price_program {
+    display: flex;
+    flex-direction: column;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-header .best-price-program-logo .best-price-program-img {
+    margin: 0 auto;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-header div .best-price__program-header-text {
+    font-size: 1.5rem;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-des {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-note {
+    text-align: center;
+    padding: 10px;
+  }
+  .price-program .price-program-content .program .program-list {
+    padding: 20px 20px 0 20px;
+  }
+  .price-program .price-program-content .program .program-list .program-item {
+    margin-bottom: 10px;
+  }
+  .price-program .price-program-content .program .program__btn {
+    height: 46px;
+  }
+
+  .november_deals .novemer_deals-header {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .november_deals .november_deals-text {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  .november_deals .november_deals-list {
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .november_deals .november_deals-list .november_deals-item-last {
+    width: 100%;
+  }
+  .november_deals .november_deals-list .november_deals-item-last .item-last-header {
+    padding: 10px 0;
+  }
+  .november_deals .november_deals-list .november_deals-item-last .content-last-list {
+    grid-template-columns: auto auto auto auto auto;
+  }
+  .november_deals .november_deals-list .november_deals-item-last .content-last-list .content-last-list-item {
+    font-size: 1.5rem;
+  }
+
+  .car_insurance .car_insurance-list {
+    flex-wrap: wrap;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item-last {
+    width: 100%;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list {
+    width: 80%;
+    display: flex;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list .car_insurance-item-last-link {
+    flex: 1;
+    display: block;
+  }
+
+  .car_buying-advice {
+    overflow: auto;
+    width: 1700px;
+    max-width: 100%;
+    display: block;
+  }
+  .car_buying-advice .car_advice-heading .car_advice-header {
+    font-size: 2rem;
+  }
+  .car_buying-advice .car_advice-heading .car_advice-link {
+    font-size: 1.4rem;
+  }
+  .car_buying-advice .car_advice-content {
+    overflow: auto;
+  }
+  .car_buying-advice .car_advice-content .car_advice-list {
+    width: 840px;
+    flex-direction: row;
+  }
+  .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large {
+    width: 270px;
+    height: 270px;
+    margin-right: 15px;
+  }
+  .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text {
+    left: 20px;
+    bottom: 20px;
+  }
+  .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text p {
+    font-size: 1.2rem;
+  }
+  .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text h1 {
+    font-size: 2rem;
+  }
+  .car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small {
+    width: 270px;
+    margin-right: 15px;
+  }
+
+  .advice_list_more .advice_list_header {
+    font-size: 2rem;
+  }
+  .advice_list_more .advice_list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cars_list .best_cars_list {
+    flex-direction: column;
+  }
+  .cars_list .best_cars_list .best_cars_list-col {
+    margin-bottom: 25px;
+  }
+  .cars_list .popular__cars-sale {
+    flex-direction: column;
+  }
+
+  footer .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer .footer-logo {
+    margin-bottom: 16px;
+  }
+  footer .footer .footer__info .footer-1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+  footer .footer .footer__info .footer-2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.modal2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(190, 184, 184, 0.6);
+  width: 0;
+  z-index: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: black;
+  position: fixed;
+  width: 0;
+  top: 0;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  right: -100px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.modal-content .modal__header {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-content .modal__header .modal__header-link {
+  font-size: 1.6rem;
+}
+.modal-content .modal__header span {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  top: -3px;
+  font-size: 2.4rem;
+  color: var(--white-color);
+}
+.modal-content .modal__header span:hover {
+  color: #dbd8d8;
+}
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 3px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-content select option {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.modal-content .search {
+  background-color: red;
+  color: var(--white-color);
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 3px 0;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.modal-content .modal__car-list {
+  margin-top: 10px;
+  min-width: 100px;
+  list-style-type: none;
+}
+.modal-content .modal__car-list .modal__car-item {
+  color: var(--white-color);
+  padding: 10px 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.modal-content .modal__car-list .modal__car-item span {
+  font-size: 1.4rem;
+}
+.modal-content .modal__car-list .modal__car-item:hover {
+  color: #dbd8d8;
+}
+.modal-content .modal__header-sm {
+  color: #a8a7a7;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+.modal-content .modal__link-list {
+  list-style-type: none;
+}
+.modal-content .modal__link-list .modal__link-item {
+  padding: 10px 0;
+}
+.modal-content .modal__link-list .modal__link-item .modal__link {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.modal-content .modal__list-more {
+  padding: 10px 0;
+  list-style-type: none;
+}
+.modal-content .modal__list-more .modal__more-item {
+  padding: 5px 0;
+}
+.modal-content .modal__list-more .modal__more-item .modal__more-link {
+  font-size: 1.2rem;
+}
+.modal-content .modal__logo i {
+  color: white;
+  font-size: 2.4rem;
+  margin: 15px;
+}
+
+.modal__details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 0;
+  height: 100%;
+  transition: 0.4s;
+  background-color: black;
+}
+.modal__details .modal__details-menu {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px 5px 15px;
+}
+.modal__details .modal__details-menu .modal__details_return {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.modal__details .modal__details-menu .modal__details_return:hover {
+  color: #ccc9c9;
+}
+.modal__details .modal__details-menu .modal__details-close {
+  color: var(--white-color);
+  font-size: 2.6rem;
+  position: relative;
+  top: -3px;
+  cursor: pointer;
+}
+.modal__details .modal__details-menu .modal__details-close:hover {
+  color: #ccc9c9;
+}
+.modal__details .modal__details-content {
+  padding: 20px 15px;
+}
+.modal__details .modal__details-content .modal__details-header {
+  font-size: 2rem;
+  color: #b6afaf;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.modal__details .modal__details-content .modal__details-list {
+  list-style-type: none;
+}
+.modal__details .modal__details-content .modal__details-list li {
+  color: white;
+  font-size: 1.6rem;
+  padding: 10px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.modal__details .modal__details-content .modal__details-list li:hover {
+  color: #adacac;
+}
+
+@media only screen and (max-width: 960px) {
+  .intro .intro-content {
+    display: none;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .container .browse-brand .browse-brand-list {
+    width: 100%;
+    grid-template-columns: auto auto auto;
+  }
+
+  .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
+    width: 120px;
+    height: 80px;
+  }
+
+  .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container .menu {
+    transform: translateY(-100%);
+  }
+  .container .menu .menu__btn button {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+  .container .menu .menu__navbar select {
+    display: none !important;
+  }
+  .container .menu .menu__navbar input {
+    display: none !important;
+  }
+  .container .menu .menu__navbar .search {
+    border-radius: 5px;
+  }
+  .container .best-car-rankings .car-ranking-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text {
+    width: 70%;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
+    max-width: 100%;
+  }
+  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
+    width: 180px;
+  }
+  .container .browse__style .browse__style-list {
+    grid-template-columns: auto auto;
+  }
+  .container .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
+    width: 120px;
+  }
+  .container .november_deals .november_deals-list .november_deals-item-last .content-last-list {
+    grid-template-columns: auto auto;
+  }
+  .container .used__award {
+    width: 100%;
+  }
+  .container .used__award .used-car-rankings {
+    width: 100%;
+  }
+
+  .price-program .price-program-content {
+    width: 96%;
+  }
+  .price-program .price-program-content .best-price_program {
+    padding: 0;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-des {
+    display: none;
+  }
+  .price-program .price-program-content .best-price_program .best-price__program-note {
+    display: none;
+  }
+
+  .car_insurance .car_insurance-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-logo {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #adacac;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-header {
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item-last .car_insurance-item-last-abc .car_insurance-item-last-list {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  footer .footer__list {
+    flex-direction: column;
+  }
+  footer .footer__list .footer__list-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  footer .footer__list .footer__list-item p {
+    display: none;
+  }
+  footer .footer__list .footer__list-item .footer__col_header {
+    display: block;
+  }
+  footer .footer__list .footer__list-item .footer__list-col {
+    display: none;
+  }
+  footer .footer .footer__info {
+    width: 100%;
+  }
+  footer .footer .footer__info .footer-1 {
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .footer .footer__info .footer-1 .footer__info-link {
+    margin-bottom: 10px;
+  }
+  footer .footer .footer__info .footer-2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .footer .footer__info .footer-2 .footer-2-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .footer .footer__info .footer-2 .footer-2-list .footer__link-benifit {
+    font-size: 1rem;
+  }
+
+  .car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-logo i {
+    font-size: 2.4rem;
+  }
+  .car_insurance .car_insurance-list .car_insurance-item .car_insurance-item-header {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .november_deals .november_deals-list .november_deals-item {
+    margin-right: 10px;
+  }
+  .november_deals .november_deals-list .november_deals-item .november_deals-item-header {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .car_buying-advice .car_advice-heading .car_advice-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
+    width: 140px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
