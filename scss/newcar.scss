@@ -207,8 +207,21 @@ a:hover {
   width: 100%;
 }
 
+.main__content-item-media {
+  div {
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
 .item-des-img {
   height: 150px;
+  vertical-align: middle;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 .main__content-item-des {
@@ -310,6 +323,128 @@ a:hover {
       position: relative;
       top: 1px;
     }
+  }
+}
+
+.movePage {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .movePage__btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    border: 1px solid rgb(216, 212, 212);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 1px 1px rgb(102, 102, 102);
+    cursor: pointer;
+  }
+  :first-child {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  i.fa-arrow-left {
+    margin-right: 5px;
+    font-size: 1.6rem;
+  }
+  i.fa-arrow-right {
+    margin-left: 5px;
+    font-size: 1.6rem;
+  }
+  .numberOfPage {
+    align-self: center;
+    font-size: 1.6rem;
+    color: rgb(102, 102, 102);
+  }
+}
+
+.browse__side {
+  padding: 20px;
+  border: 1px solid rgb(211, 208, 208);
+  height: 400px;
+  background-color: white;
+}
+
+.browse__side-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.browse__side-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+}
+
+.browse__side-item {
+  color: black;
+  @include link__gray-hover;
+  text-align: center;
+}
+
+.browse-item-img {
+  width: 100%;
+  height: 40px;
+}
+
+.browse-item-text {
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.browse__side-footer {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  span {
+    font-size: 1.4rem;
+    position: relative;
+    top: -1px;
+  }
+}
+
+.moreOption {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.moreOption__header {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.moreOption__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+}
+
+.moreOption-item {
+  flex: 1;
+  &:hover {
+    box-shadow: 0 0 2px 2px rgb(133, 129, 129);
+  }
+  .moreOption-item-img {
+    width: 100%;
+    height: 200px;
+  }
+  .moreOption-item-text {
+    @include link__gray-hover;
+    color: black;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+    border: 1px solid rgb(179, 174, 174);
+    border-top: none;
   }
 }
 

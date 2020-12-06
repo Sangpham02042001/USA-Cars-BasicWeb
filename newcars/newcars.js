@@ -326,7 +326,7 @@ var mainJSON = {
 var contentItem; //main__content-item
 var contentItemDes; //main__content-item-des
 var media; //media main__content-item-media
-var itemImgLink; //media main__content-item-media a
+var itemImgLink; //media main__content-item-media .item-img-div
 var itemDesImg; // item-des-img
 var mediaBody; //media-body
 var itemHeaderLink; //item-header-link
@@ -355,12 +355,12 @@ window.onload = function () {
         contentItemDes.setAttribute("class", "main__content-item-des");
         media = document.createElement("div");
         media.setAttribute("class", "media main__content-item-media");
-        itemImgLink = document.createElement("a");
-        itemImgLink.setAttribute("href", "#");
+        itemImgDiv = document.createElement("div");
+        itemImgDiv.setAttribute("class", "item-img-div");
         itemDesImg = document.createElement("img");
         itemDesImg.setAttribute("class", "item-des-img");
         itemDesImg.setAttribute("src", mainJSON[i]["img"]);
-        itemImgLink.appendChild(itemDesImg);
+        itemImgDiv.appendChild(itemDesImg);
 
         mediaBody = document.createElement("div");
         mediaBody.setAttribute("class", "media-body");
@@ -396,7 +396,7 @@ window.onload = function () {
         mediaBody.appendChild(orderInList);
         mediaBody.appendChild(itemTextDes);
         // console.log(mediaBody);
-        media.appendChild(itemImgLink);
+        media.appendChild(itemImgDiv);
         media.appendChild(mediaBody);
         // console.log(media);
 
