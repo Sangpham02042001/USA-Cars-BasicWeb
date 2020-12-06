@@ -26,6 +26,7 @@ body {
 @mixin header_link_hover {
   &:hover {
     color: #ccc9c9;
+    text-decoration: none;
   }
 }
 
@@ -92,6 +93,11 @@ body {
 .rotateReverse {
   transform: rotate(-180deg);
   transition: all 0.5s;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 /*---------------------------------HEADER ------------------- */
@@ -233,75 +239,76 @@ body {
   }
 }
 
-/* --------------------- CONTAINER1 ------------------- */
-.container {
+/* --------------------- CONTAINER__index1 ------------------- */
+.container__index {
   width: 80%;
   min-width: 1280px;
   margin: 0 auto;
   position: relative;
-  .menu {
-    // width: 100%;
-    // position: absolute;
-    // top: -20%;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #a7a6a6;
-    transform: translateY(-70%);
-    .menu__btn {
-      display: flex;
-      .reviews__button {
-        margin-right: 10px;
-        border-top: 3px solid red;
-      }
-      button {
-        color: var(--white-color);
-        background-color: #333333;
-        padding: 20px;
-        font-size: 1.8rem;
-        font-weight: 300;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        border-radius: 0;
+}
+
+.menu {
+  // width: 100%;
+  // position: absolute;
+  // top: -20%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #a7a6a6;
+  transform: translateY(-70%);
+  .menu__btn {
+    display: flex;
+    .reviews__button {
+      margin-right: 10px;
+      border-top: 3px solid red;
+    }
+    button {
+      color: var(--white-color);
+      background-color: #333333;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: 300;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      border-radius: 0;
+    }
+  }
+  .menu__navbar {
+    width: 100%;
+    background-color: #333333;
+    padding: 15px;
+    display: flex;
+    select {
+      padding: 15px;
+      flex: 1;
+      font-size: 1.4rem;
+      cursor: pointer;
+      border-collapse: collapse;
+      option {
+        font-size: 1.2rem;
+        padding: 5px;
       }
     }
-    .menu__navbar {
-      width: 100%;
-      background-color: #333333;
+    input {
+      flex: 1;
+      font-size: 1.4rem;
       padding: 15px;
-      display: flex;
-      select {
-        padding: 15px;
-        flex: 1;
-        font-size: 1.4rem;
-        cursor: pointer;
-        border-collapse: collapse;
-        option {
-          font-size: 1.2rem;
-          padding: 5px;
-        }
-      }
-      input {
-        flex: 1;
-        font-size: 1.4rem;
-        padding: 15px;
-        border: none;
-        outline: none;
-        display: none;
-      }
-      .search {
-        border: none;
-        outline: none;
-        padding: 15px;
-        color: var(--white-color);
-        font-weight: 800;
-        border-radius: 0 5px 5px 0;
-        flex: 1;
-        font-size: 1.5rem;
-        cursor: pointer;
-        background-color: red;
-        &:hover {
-          background-color: rgb(206, 43, 43);
-        }
+      border: none;
+      outline: none;
+      display: none;
+    }
+    .search {
+      border: none;
+      outline: none;
+      padding: 15px;
+      color: var(--white-color);
+      font-weight: 800;
+      border-radius: 0 5px 5px 0;
+      flex: 1;
+      font-size: 1.5rem;
+      cursor: pointer;
+      background-color: red;
+      &:hover {
+        background-color: rgb(206, 43, 43);
       }
     }
   }
@@ -546,6 +553,7 @@ body {
   width: 100%;
   .price-program-content {
     display: flex;
+    flex-direction: row;
     width: 86%;
     min-width: 1212px;
     margin: 0 auto;
@@ -1013,6 +1021,7 @@ footer {
     .footer__list-item {
       flex: 1;
       .footer__col_header {
+        @include header_link_hover;
         font-size: 1.6rem;
         display: block;
         margin-bottom: 15px;
@@ -1024,6 +1033,7 @@ footer {
         flex-direction: column;
         margin-bottom: 15px;
         .footer_list_link {
+          @include header_link_hover;
           display: block;
           padding: 10px 0;
           font-size: 1.4rem;
@@ -1051,6 +1061,7 @@ footer {
     }
     .footer__info {
       .footer__info-link {
+        @include header_link_hover;
         font-size: 1.4rem;
         margin-right: 20px;
       }
@@ -1065,6 +1076,7 @@ footer {
         .footer__link-benifit {
           font-size: 1rem;
           margin-top: 15px;
+          @include header_link_hover;
         }
       }
     }
@@ -1125,7 +1137,7 @@ footer {
       }
     }
   }
-  .container {
+  .container__index {
     min-width: 96%;
     margin: 0 auto;
   }
@@ -1174,60 +1186,58 @@ footer {
   .select__list {
     display: block;
   }
-  .container {
-    .menu {
-      .menu__btn {
-        button {
-          width: 50%;
-        }
-      }
-    }
-    .best-car-rankings {
-      .car-ranking-list {
-        padding-right: 0;
-        padding-left: 0;
-        display: grid;
-        grid-template-columns: auto auto;
-        // text-align: left;
-        .car-ranking-item {
-          .car-ranking-img {
-            max-width: 180px;
-          }
-          flex-direction: row-reverse;
-          .car-ranking-item-text {
-            .car-ranking-header {
-              padding-left: 0;
-              text-align: left;
-            }
-            .property-car {
-              text-align: left;
-            }
-            .info-car-ranking {
-              text-align: left;
-            }
-          }
-        }
-      }
-    }
-    .used__award {
-      flex-direction: column;
-      width: 50%;
-      .advertisement {
-        width: 100%;
-        font-size: 1.4rem;
-        padding: 15px;
-      }
-    }
-    .browse__style {
-      .browse__style-list {
-        width: 100%;
-      }
-    }
-    .browse-brand {
-      .browse-brand-list {
+  .menu {
+    .menu__btn {
+      button {
         width: 50%;
-        grid-template-columns: auto auto auto;
       }
+    }
+  }
+  .best-car-rankings {
+    .car-ranking-list {
+      padding-right: 0;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: auto auto;
+      // text-align: left;
+      .car-ranking-item {
+        .car-ranking-img {
+          max-width: 180px;
+        }
+        flex-direction: row-reverse;
+        .car-ranking-item-text {
+          .car-ranking-header {
+            padding-left: 0;
+            text-align: left;
+          }
+          .property-car {
+            text-align: left;
+          }
+          .info-car-ranking {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .used__award {
+    flex-direction: column;
+    width: 50%;
+    .advertisement {
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 15px;
+    }
+  }
+  .browse__style {
+    .browse__style-list {
+      width: 100%;
+    }
+  }
+  .browse-brand {
+    .browse-brand-list {
+      width: 50%;
+      grid-template-columns: auto auto auto;
     }
   }
   .price-program {
@@ -1431,6 +1441,7 @@ footer {
     position: relative;
     margin-bottom: 10px;
     .modal__header-link {
+      @include header_link_hover;
       font-size: 1.6rem;
     }
     span {
@@ -1501,6 +1512,7 @@ footer {
         color: var(--white-color);
         font-size: 1.8rem;
         font-weight: 600;
+        @include header_link_hover;
       }
     }
   }
@@ -1510,6 +1522,7 @@ footer {
     .modal__more-item {
       padding: 5px 0;
       .modal__more-link {
+        @include header_link_hover;
         font-size: 1.2rem;
       }
     }
@@ -1561,14 +1574,17 @@ footer {
   .modal__details-content {
     padding: 20px 15px;
     .modal__details-header {
-      font-size: 2rem;
+      display: block;
+      font-size: 1.8rem;
       color: rgb(182, 175, 175);
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-transform: uppercase;
+      @include header_link_hover;
     }
     .modal__details-list {
       list-style-type: none;
+      min-width: 200px;
       li {
         color: white;
         font-size: 1.6rem;
@@ -1576,6 +1592,7 @@ footer {
         font-weight: 600;
         cursor: pointer;
         transition: color 0.3s;
+        // max-height: 40px;
         &:hover {
           color: #adacac;
         }
@@ -1593,7 +1610,7 @@ footer {
 }
 
 @media only screen and (max-width: 760px) {
-  .container {
+  .container__index {
     .browse-brand {
       .browse-brand-list {
         width: 100%;
@@ -1623,7 +1640,7 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
-  .container {
+  .container__index {
     .menu {
       transform: translateY(-100%);
       .menu__btn {
@@ -1812,7 +1829,7 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
-  .container {
+  .container__index {
     .browse__style {
       .browse__style-list {
         .browse__style-item {

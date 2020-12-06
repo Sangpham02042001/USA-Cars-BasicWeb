@@ -65,6 +65,7 @@ const modalJSON = {
 const header__menu = document.querySelector(".header__menu");
 header__menu.addEventListener("click", function () {
     document.getElementsByClassName("modal2")[0].style.width = "100%";
+    $("body").addClass("stop-scrolling");
     if (document.body.offsetWidth <= "640") {
         document.getElementsByClassName("modal-content")[0].style.width = "100%";
     } else {
@@ -73,9 +74,11 @@ header__menu.addEventListener("click", function () {
     document.getElementsByClassName("modal-content")[0].style.right = "0";
 });
 
+
 function toggleWidth() {
     document.getElementsByClassName("modal2")[0].style.width = "0";
     document.getElementsByClassName("modal-content")[0].style.width = "0";
+    $("body").removeClass("stop-scrolling");
     if (document.body.offsetWidth <= 640) {
         document.getElementsByClassName("modal-content")[0].style.right = "-100%"
     } else {
@@ -91,6 +94,7 @@ function toggleWidthDetail() {
 document.querySelector(".modal__details-close").addEventListener("click", function () {
     toggleWidth();
     toggleWidthDetail();
+    $("body").removeClass("stop-scrolling");
 })
 
 
@@ -138,25 +142,29 @@ window.onload = function () {
     }
 }
 
-var text = document.querySelectorAll(".modal__car-item");
 
 function ModalLink(abc) {
     if (document.body.offsetWidth <= "640") {
-        document.getElementsByClassName("modal-content")[0].style.width = "100%";
+        document.getElementsByClassName("modal__details")[0].style.width = "100%";
     } else {
-        document.getElementsByClassName("modal-content")[0].style.width = "290px";
+        document.getElementsByClassName("modal__details")[0].style.width = "290px";
     }
-    document.querySelector(".modal__details-header").textContent = abc;
-    var list = modalJSON[abc];
+    var t = document.createTextNode(abc);
+    // document.querySelector(".modal__details-header").textContent = abc;
+    document.querySelector(".modal__details-header").textContent = "";
+    document.querySelector(".modal__details-header").appendChild(t);
+    var href = abc.split(" ").join("").toLowerCase();
+    document.querySelector(".modal__details-header").setAttribute("href", "../" + href + "/" + href + ".html");
     $(".modal__details-list").find('li').remove();
-    for (let i = 0; i < list.length; i++) {
+    for (let i = 0; i < modalJSON[abc].length; i++) {
         var li = document.createElement("LI");
-        var textNode = document.createTextNode(list[i]);
+        var textNode = document.createTextNode(modalJSON[abc][i]);
         li.appendChild(textNode);
         document.querySelector(".modal__details-list").appendChild(li);
     }
 }
 
+var text = document.querySelectorAll(".modal__car-item");
 for (var i = 0; i < text.length; i++) {
     text[i].addEventListener("click", function (e) {
         e.preventDefault();
@@ -193,6 +201,9 @@ $(document).ready(function () {
         $(".year").css("display", "none");
     })
     $(".browse__style-item-img").on("click", function () {
+        if (document.body.offsetWidth < 980) {
+            return;
+        }
         $("#modal").css("display", "block");
         modalImg.src = this.src;
     })
@@ -207,11 +218,3 @@ $(document).ready(function () {
         })
     }
 })
-
-
-
-
-
-
-
-

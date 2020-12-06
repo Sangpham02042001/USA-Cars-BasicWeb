@@ -49,6 +49,11 @@ body {
   transition: all 0.5s;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 /*---------------------------------HEADER ------------------- */
 .header {
   display: flex;
@@ -73,6 +78,7 @@ body {
 }
 .header .header__title:hover {
   color: #ccc9c9;
+  text-decoration: none;
 }
 .header .header__title .header__title_span {
   position: relative;
@@ -118,6 +124,7 @@ body {
 }
 .header .header__list .header__list-item .header__list-item-link:hover {
   color: #ccc9c9;
+  text-decoration: none;
 }
 .header .header__list .header__list-item .header__item-dropdown {
   position: absolute;
@@ -140,6 +147,7 @@ body {
 }
 .header .header__list .header__list-item .header__item-dropdown .header__dropdown-item:hover {
   color: #ccc9c9;
+  text-decoration: none;
 }
 .header .header__list .header__list-item .header__item-dropdown::after {
   display: none;
@@ -153,6 +161,7 @@ body {
 }
 .header .header__menu:hover {
   color: #ccc9c9;
+  text-decoration: none;
 }
 .header .header__menu .header__menu_bar {
   width: 18px;
@@ -193,26 +202,27 @@ body {
   color: var(--white-color);
 }
 
-/* --------------------- CONTAINER1 ------------------- */
-.container {
+/* --------------------- CONTAINER__index1 ------------------- */
+.container__index {
   width: 80%;
   min-width: 1280px;
   margin: 0 auto;
   position: relative;
 }
-.container .menu {
+
+.menu {
   padding-bottom: 30px;
   border-bottom: 1px solid #a7a6a6;
   transform: translateY(-70%);
 }
-.container .menu .menu__btn {
+.menu .menu__btn {
   display: flex;
 }
-.container .menu .menu__btn .reviews__button {
+.menu .menu__btn .reviews__button {
   margin-right: 10px;
   border-top: 3px solid red;
 }
-.container .menu .menu__btn button {
+.menu .menu__btn button {
   color: var(--white-color);
   background-color: #333333;
   padding: 20px;
@@ -223,24 +233,24 @@ body {
   outline: none;
   border-radius: 0;
 }
-.container .menu .menu__navbar {
+.menu .menu__navbar {
   width: 100%;
   background-color: #333333;
   padding: 15px;
   display: flex;
 }
-.container .menu .menu__navbar select {
+.menu .menu__navbar select {
   padding: 15px;
   flex: 1;
   font-size: 1.4rem;
   cursor: pointer;
   border-collapse: collapse;
 }
-.container .menu .menu__navbar select option {
+.menu .menu__navbar select option {
   font-size: 1.2rem;
   padding: 5px;
 }
-.container .menu .menu__navbar input {
+.menu .menu__navbar input {
   flex: 1;
   font-size: 1.4rem;
   padding: 15px;
@@ -248,7 +258,7 @@ body {
   outline: none;
   display: none;
 }
-.container .menu .menu__navbar .search {
+.menu .menu__navbar .search {
   border: none;
   outline: none;
   padding: 15px;
@@ -260,7 +270,7 @@ body {
   cursor: pointer;
   background-color: red;
 }
-.container .menu .menu__navbar .search:hover {
+.menu .menu__navbar .search:hover {
   background-color: #ce2b2b;
 }
 
@@ -502,6 +512,7 @@ body {
 }
 .price-program .price-program-content {
   display: flex;
+  flex-direction: row;
   width: 86%;
   min-width: 1212px;
   margin: 0 auto;
@@ -1009,6 +1020,10 @@ footer .footer__list .footer__list-item .footer__col_header {
   font-weight: 600;
   text-transform: uppercase;
 }
+footer .footer__list .footer__list-item .footer__col_header:hover {
+  color: #ccc9c9;
+  text-decoration: none;
+}
 footer .footer__list .footer__list-item .footer__list-col {
   display: flex;
   flex-direction: column;
@@ -1018,6 +1033,10 @@ footer .footer__list .footer__list-item .footer__list-col .footer_list_link {
   display: block;
   padding: 10px 0;
   font-size: 1.4rem;
+}
+footer .footer__list .footer__list-item .footer__list-col .footer_list_link:hover {
+  color: #ccc9c9;
+  text-decoration: none;
 }
 footer .footer__list .footer__list-item p {
   color: var(--white-color);
@@ -1040,6 +1059,10 @@ footer .footer .footer__info .footer__info-link {
   font-size: 1.4rem;
   margin-right: 20px;
 }
+footer .footer .footer__info .footer__info-link:hover {
+  color: #ccc9c9;
+  text-decoration: none;
+}
 footer .footer .footer__info div {
   display: flex;
 }
@@ -1052,6 +1075,10 @@ footer .footer .footer__info div p {
 footer .footer .footer__info div .footer__link-benifit {
   font-size: 1rem;
   margin-top: 15px;
+}
+footer .footer .footer__info div .footer__link-benifit:hover {
+  color: #ccc9c9;
+  text-decoration: none;
 }
 footer .footer .footer__logo {
   padding: 10px 30px;
@@ -1107,7 +1134,7 @@ footer .footer .footer__logo i {
     text-align: center;
   }
 
-  .container {
+  .container__index {
     min-width: 96%;
     margin: 0 auto;
   }
@@ -1142,44 +1169,48 @@ footer .footer .footer__logo i {
     display: block;
   }
 
-  .container .menu .menu__btn button {
+  .menu .menu__btn button {
     width: 50%;
   }
-  .container .best-car-rankings .car-ranking-list {
+
+  .best-car-rankings .car-ranking-list {
     padding-right: 0;
     padding-left: 0;
     display: grid;
     grid-template-columns: auto auto;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item {
+  .best-car-rankings .car-ranking-list .car-ranking-item {
     flex-direction: row-reverse;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
+  .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
     max-width: 180px;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .car-ranking-header {
+  .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .car-ranking-header {
     padding-left: 0;
     text-align: left;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
+  .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
     text-align: left;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking {
+  .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .info-car-ranking {
     text-align: left;
   }
-  .container .used__award {
+
+  .used__award {
     flex-direction: column;
     width: 50%;
   }
-  .container .used__award .advertisement {
+  .used__award .advertisement {
     width: 100%;
     font-size: 1.4rem;
     padding: 15px;
   }
-  .container .browse__style .browse__style-list {
+
+  .browse__style .browse__style-list {
     width: 100%;
   }
-  .container .browse-brand .browse-brand-list {
+
+  .browse-brand .browse-brand-list {
     width: 50%;
     grid-template-columns: auto auto auto;
   }
@@ -1365,6 +1396,10 @@ footer .footer .footer__logo i {
 .modal-content .modal__header .modal__header-link {
   font-size: 1.6rem;
 }
+.modal-content .modal__header .modal__header-link:hover {
+  color: #ccc9c9;
+  text-decoration: none;
+}
 .modal-content .modal__header span {
   position: absolute;
   right: 0;
@@ -1435,6 +1470,10 @@ footer .footer .footer__logo i {
   font-size: 1.8rem;
   font-weight: 600;
 }
+.modal-content .modal__link-list .modal__link-item .modal__link:hover {
+  color: #ccc9c9;
+  text-decoration: none;
+}
 .modal-content .modal__list-more {
   padding: 10px 0;
   list-style-type: none;
@@ -1444,6 +1483,10 @@ footer .footer .footer__logo i {
 }
 .modal-content .modal__list-more .modal__more-item .modal__more-link {
   font-size: 1.2rem;
+}
+.modal-content .modal__list-more .modal__more-item .modal__more-link:hover {
+  color: #ccc9c9;
+  text-decoration: none;
 }
 .modal-content .modal__logo i {
   color: white;
@@ -1491,14 +1534,20 @@ footer .footer .footer__logo i {
   padding: 20px 15px;
 }
 .modal__details .modal__details-content .modal__details-header {
-  font-size: 2rem;
+  display: block;
+  font-size: 1.8rem;
   color: #b6afaf;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+}
+.modal__details .modal__details-content .modal__details-header:hover {
+  color: #ccc9c9;
+  text-decoration: none;
 }
 .modal__details .modal__details-content .modal__details-list {
   list-style-type: none;
+  min-width: 200px;
 }
 .modal__details .modal__details-content .modal__details-list li {
   color: white;
@@ -1518,7 +1567,7 @@ footer .footer .footer__logo i {
   }
 }
 @media only screen and (max-width: 760px) {
-  .container .browse-brand .browse-brand-list {
+  .container__index .browse-brand .browse-brand-list {
     width: 100%;
     grid-template-columns: auto auto auto;
   }
@@ -1533,48 +1582,48 @@ footer .footer .footer__logo i {
   }
 }
 @media only screen and (max-width: 640px) {
-  .container .menu {
+  .container__index .menu {
     transform: translateY(-100%);
   }
-  .container .menu .menu__btn button {
+  .container__index .menu .menu__btn button {
     padding: 10px;
     font-size: 1.4rem;
   }
-  .container .menu .menu__navbar select {
+  .container__index .menu .menu__navbar select {
     display: none !important;
   }
-  .container .menu .menu__navbar input {
+  .container__index .menu .menu__navbar input {
     display: none !important;
   }
-  .container .menu .menu__navbar .search {
+  .container__index .menu .menu__navbar .search {
     border-radius: 5px;
   }
-  .container .best-car-rankings .car-ranking-list {
+  .container__index .best-car-rankings .car-ranking-list {
     display: flex;
     flex-direction: column;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text {
+  .container__index .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text {
     width: 70%;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
+  .container__index .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-item-text .property-car {
     max-width: 100%;
   }
-  .container .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
+  .container__index .best-car-rankings .car-ranking-list .car-ranking-item .car-ranking-img {
     width: 180px;
   }
-  .container .browse__style .browse__style-list {
+  .container__index .browse__style .browse__style-list {
     grid-template-columns: auto auto;
   }
-  .container .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
+  .container__index .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
     width: 120px;
   }
-  .container .november_deals .november_deals-list .november_deals-item-last .content-last-list {
+  .container__index .november_deals .november_deals-list .november_deals-item-last .content-last-list {
     grid-template-columns: auto auto;
   }
-  .container .used__award {
+  .container__index .used__award {
     width: 100%;
   }
-  .container .used__award .used-car-rankings {
+  .container__index .used__award .used-car-rankings {
     width: 100%;
   }
 
@@ -1679,7 +1728,7 @@ footer .footer .footer__logo i {
   }
 }
 @media only screen and (max-width: 320px) {
-  .container .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
+  .container__index .browse__style .browse__style-list .browse__style-item .browse__style-item-img {
     width: 140px;
   }
 }
