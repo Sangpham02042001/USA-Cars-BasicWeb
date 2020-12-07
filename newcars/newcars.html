@@ -90,7 +90,7 @@
             <div class="header__menu_bar"></div>
         </div>
         <div class="menu">
-            <div class="menu__navbar">
+            <div class="menu__navbar d-none d-md-inline-block">
                 <select name="make" class="make">
                     <option value="make">Make</option>
                 </select>
@@ -105,11 +105,11 @@
         </div>
     </header>
 
-    <div class="link">
+    <div class="link container">
         <a href="../vendors/index.html" class="first__link">Cars</a>
     </div>
 
-    <div class="introduce">
+    <div class="introduce container">
         <h1 class="introduce__header">Browse Cars and Trucks</h1>
         <p class="introduce__text">Find expert reviews, photos and pricing for All Cars and Trucks from U.S. News &
             World Report.</p>
@@ -131,16 +131,16 @@
         </div>
     </div>
 
-    <div class="container-fluid content-page">
+    <div class="content-page">
         <div class="container">
             <div class="row">
-                <div class="col-2 select__side">
+                <div class="col-lg-2 d-none d-lg-block select__side">
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">MAKE </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list select__side-make-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Audi <span> (160)</span> </label>
                             </div>
@@ -171,15 +171,15 @@
                             <div class="checkbox disabled">
                                 <label><input type="checkbox" value="">Toyota<span>(302)</span> </label>
                             </div>
-                        </form>
-                        <p class="show__all-select"> Show all Makes <i class="fas fa-angle-down"></i> </p>
+                        </div>
+                        <div class="show__all-select">Show all Makes <i class="fas fa-angle-down"></i> </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">STYLE </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Small Cars <span> (807)</span> </label>
                             </div>
@@ -210,14 +210,14 @@
                             <div class="checkbox disabled">
                                 <label><input type="checkbox" value="">Vans<span>(125)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">YEAR </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list select-year">
+                        <div action="" class="select__side-list select-year">
                             <select name="" id="" class="year__select-item">
                                 <option value="" class="year__option">Any</option>
                                 <option value="" class="year__option">2021</option>
@@ -253,14 +253,14 @@
                                 <option value="" class="year__option">2019</option>
                                 <option value="" class="year__option">2018</option>
                             </select>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">PRICE </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Under $20K <span> (2425)</span> </label>
                             </div>
@@ -297,14 +297,14 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Over $70K<span>(302)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">MPG </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">10+ <span> (3686)</span> </label>
                             </div>
@@ -317,14 +317,14 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">40+<span>(265)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">SEATING CAPACITY </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">2 <span> (277)</span> </label>
                             </div>
@@ -343,14 +343,14 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">8+<span>(240)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">DRIVETRAIN </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">AWD<span> (1794)</span> </label>
                             </div>
@@ -360,14 +360,14 @@
                             <div class="checkbox disabled">
                                 <label><input type="checkbox" value="">RWD<span>(1265)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">TRANNSMISSION </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Automatic<span> (3701)</span> </label>
                             </div>
@@ -377,14 +377,14 @@
                             <div class="checkbox disabled">
                                 <label><input type="checkbox" value="">Unknown<span>(2)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">ENGINE</h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">4 Cyl<span> (2085)</span> </label>
                             </div>
@@ -403,14 +403,14 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">12 Cyl <span>(57)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">FUEL TYPE</h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Gas <span> (3534)</span> </label>
                             </div>
@@ -423,14 +423,14 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Electric<span>(65)</span> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="select__side-item">
                         <div class="select-item-heading">
                             <h2 class="select-item-header">FEATURES</h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <form action="" class="select__side-list">
+                        <div action="" class="select__side-list">
                             <div class="checkbox">
                                 <label><input type="checkbox" value="">Leather Seats <span> (3934)</span> </label>
                             </div>
@@ -485,10 +485,10 @@
                                     <p>Adaptive Cruise Control<span>(1457)</span></p>
                                 </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 main__content">
+                <div class="col-lg-6 col-12 col-md-7 main__content">
                     <h3 class="number-match">3.960 matches</h3>
                     <div class="main__content-list">
                         <!-- <div class="main__content-item">
@@ -540,7 +540,7 @@
                         <button class="movePage__btn">Next<i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="col-4 browse__side">
+                <div class="col-lg-4 col-md-5 browse__side">
                     <div class="browse__side-header">Browse Cars</div>
                     <div class="browse__side-list">
                         <a href="" class="browse__side-item">

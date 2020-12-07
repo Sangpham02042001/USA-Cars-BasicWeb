@@ -27,10 +27,15 @@ a:hover {
   border: none;
   .menu__navbar {
     background-color: transparent;
+    display: flex;
+    align-items: center;
     select {
-      padding: 0px;
+      padding: 9px;
       font-size: 1rem;
       min-width: 120px;
+      align-self: center;
+      position: relative;
+      top: -2px;
     }
     .search {
       padding: 5px 5px;
@@ -43,7 +48,7 @@ a:hover {
 }
 
 .link {
-  @include respon;
+  // @include respon;
   height: 60px;
   padding-top: 20px;
 }
@@ -58,7 +63,7 @@ a:hover {
 }
 
 .introduce {
-  @include respon;
+  // @include respon;
   padding-bottom: 30px;
 }
 
@@ -108,28 +113,34 @@ a:hover {
   padding: 30px 0;
 }
 
-.container {
-  min-width: 1180px;
-}
+// .container {
+//   min-width: 1180px;
+// }
 
 .select__side-item {
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 1px solid rgb(102, 102, 102);
 }
 
+.select__side-list {
+  padding-top: 10px;
+}
+
 .select-item-heading {
+  cursor: pointer;
   display: flex;
-  margin-bottom: 10px;
   position: relative;
   .select-item-header {
     font-size: 1.4rem;
     font-weight: 700;
   }
-  span {
+  span i {
+    font-size: 2.2rem;
+    color: #757373;
     position: absolute;
-    right: 12px;
-    top: -12px;
-    font-size: 2.4rem;
+    right: 0px;
+    transition: 0.4s;
+    top: -2px;
   }
 }
 
@@ -150,6 +161,7 @@ a:hover {
   }
   input {
     margin-right: 10px;
+    margin-left: 3px;
     transform: scale(1.4);
     cursor: pointer;
   }
@@ -265,8 +277,10 @@ a:hover {
   padding: 10px 0;
   .item-last-find {
     padding: 6px 15px;
-    input {
+    // min-width: 200px;
+    .form-control {
       font-size: 1.2rem;
+      // min-width: 60px;
     }
     button {
       font-weight: 600;
@@ -293,7 +307,7 @@ a:hover {
 }
 
 .main-content-item-footer {
-  padding: 5px 10px;
+  padding: 10px 10px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -388,8 +402,9 @@ a:hover {
 }
 
 .browse-item-img {
-  width: 100%;
+  // width: 100%;
   height: 40px;
+  max-width: 130px;
 }
 
 .browse-item-text {
@@ -430,7 +445,7 @@ a:hover {
 .moreOption-item {
   flex: 1;
   &:hover {
-    box-shadow: 0 0 2px 2px rgb(133, 129, 129);
+    box-shadow: 0 0 2px 2px rgb(216, 211, 211);
   }
   .moreOption-item-img {
     width: 100%;
@@ -538,6 +553,131 @@ a:hover {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .header {
+    .header__list {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    min-width: 98%;
+  }
+  .item-des-img {
+    height: 100px;
+  }
+  .main__content-item-media {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main__content-item-last {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0 auto;
+    .item-last-find {
+      padding-right: 0;
+    }
+  }
+  .moreOption-item {
+    .moreOption-item-text {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// @media only screen and (max-width: 992px) {
+//   .moreOption__list {
+//     grid-template-columns: auto auto;
+//     row-gap: 20px;
+//   }
+// }
+
+@media only screen and (max-width: 768px) {
+  .main__content-item-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .browse__side-list {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .item-readmore {
+    display: block;
+  }
+
+  .item-img-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .item-des-img {
+      height: 200px;
+      width: 300px;
+    }
+  }
+
+  .main__content-item-last {
+    flex-direction: column-reverse;
+    .item-last-find {
+      padding-left: 0;
+      max-width: 100%;
+      input.form-control {
+        // width: 50%;
+      }
+      .input-group-append {
+        flex: 1;
+        button {
+          width: 100%;
+        }
+      }
+    }
+    // .item-last-price {
+    //   width: 100%;
+    //   display: flex;
+    //   justify-content: space-between;
+    // }
+  }
+  .moreOption__list {
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+  }
+
+  .browse__side {
+    width: 98%;
+    margin: 40px auto;
+    // column-gap: 30px;
+    .browse-item-img {
+      max-width: 140px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .introduce__header {
+    font-size: 2rem;
+  }
+  .introduce__text {
+    font-size: 1.4rem;
+  }
+  .moreOption__list {
+    grid-template-columns: auto;
+  }
+
+  .browse__side {
+    height: 540px;
+  }
+  .browse__side-list {
+    grid-template-columns: auto auto;
+  }
+
+  .browse__side-footer {
+    margin-top: 20px;
   }
 }
 

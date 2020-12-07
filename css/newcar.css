@@ -15,11 +15,16 @@ a:hover {
 }
 .menu .menu__navbar {
   background-color: transparent;
+  display: flex;
+  align-items: center;
 }
 .menu .menu__navbar select {
-  padding: 0px;
+  padding: 9px;
   font-size: 1rem;
   min-width: 120px;
+  align-self: center;
+  position: relative;
+  top: -2px;
 }
 .menu .menu__navbar .search {
   padding: 5px 5px;
@@ -30,9 +35,6 @@ a:hover {
 }
 
 .link {
-  width: 70%;
-  min-width: 1180px;
-  margin: 0 auto;
   height: 60px;
   padding-top: 20px;
 }
@@ -47,9 +49,6 @@ a:hover {
 }
 
 .introduce {
-  width: 70%;
-  min-width: 1180px;
-  margin: 0 auto;
   padding-bottom: 30px;
 }
 
@@ -99,29 +98,31 @@ a:hover {
   padding: 30px 0;
 }
 
-.container {
-  min-width: 1180px;
-}
-
 .select__side-item {
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #666666;
 }
 
+.select__side-list {
+  padding-top: 10px;
+}
+
 .select-item-heading {
+  cursor: pointer;
   display: flex;
-  margin-bottom: 10px;
   position: relative;
 }
 .select-item-heading .select-item-header {
   font-size: 1.4rem;
   font-weight: 700;
 }
-.select-item-heading span {
+.select-item-heading span i {
+  font-size: 2.2rem;
+  color: #757373;
   position: absolute;
-  right: 12px;
-  top: -12px;
-  font-size: 2.4rem;
+  right: 0px;
+  transition: 0.4s;
+  top: -2px;
 }
 
 .checkbox label {
@@ -140,6 +141,7 @@ a:hover {
 }
 .checkbox input {
   margin-right: 10px;
+  margin-left: 3px;
   transform: scale(1.4);
   cursor: pointer;
 }
@@ -261,7 +263,7 @@ a:hover {
 .main__content-item-last .item-last-find {
   padding: 6px 15px;
 }
-.main__content-item-last .item-last-find input {
+.main__content-item-last .item-last-find .form-control {
   font-size: 1.2rem;
 }
 .main__content-item-last .item-last-find button {
@@ -287,7 +289,7 @@ a:hover {
 }
 
 .main-content-item-footer {
-  padding: 5px 10px;
+  padding: 10px 10px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -382,8 +384,8 @@ a:hover {
 }
 
 .browse-item-img {
-  width: 100%;
   height: 40px;
+  max-width: 130px;
 }
 
 .browse-item-text {
@@ -425,7 +427,7 @@ a:hover {
   flex: 1;
 }
 .moreOption-item:hover {
-  box-shadow: 0 0 2px 2px #858181;
+  box-shadow: 0 0 2px 2px #d8d3d3;
 }
 .moreOption-item .moreOption-item-img {
   width: 100%;
@@ -445,6 +447,115 @@ a:hover {
   color: #858181;
 }
 
+@media only screen and (max-width: 1440px) {
+  .header .header__list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .container {
+    min-width: 98%;
+  }
+
+  .item-des-img {
+    height: 100px;
+  }
+
+  .main__content-item-media {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main__content-item-last {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main__content-item-last .item-last-find {
+    padding-right: 0;
+  }
+
+  .moreOption-item .moreOption-item-text {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main__content-item-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .browse__side-list {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .item-readmore {
+    display: block;
+  }
+
+  .item-img-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .item-img-div .item-des-img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .main__content-item-last {
+    flex-direction: column-reverse;
+  }
+  .main__content-item-last .item-last-find {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .main__content-item-last .item-last-find .input-group-append {
+    flex: 1;
+  }
+  .main__content-item-last .item-last-find .input-group-append button {
+    width: 100%;
+  }
+
+  .moreOption__list {
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+  }
+
+  .browse__side {
+    width: 98%;
+    margin: 40px auto;
+  }
+  .browse__side .browse-item-img {
+    max-width: 140px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .introduce__header {
+    font-size: 2rem;
+  }
+
+  .introduce__text {
+    font-size: 1.4rem;
+  }
+
+  .moreOption__list {
+    grid-template-columns: auto;
+  }
+
+  .browse__side {
+    height: 540px;
+  }
+
+  .browse__side-list {
+    grid-template-columns: auto auto;
+  }
+
+  .browse__side-footer {
+    margin-top: 20px;
+  }
+}
 @media only screen and (max-width: 1280px) {
   footer .footer__list {
     min-width: 96%;

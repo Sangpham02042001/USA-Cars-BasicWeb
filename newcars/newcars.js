@@ -323,6 +323,95 @@ var mainJSON = {
     },
 }
 
+
+const makesListAppend = {
+    "acura": {
+        "brand": "Acura",
+        "number": 92,
+    },
+    "alfa_romeo": {
+        "brand": "Alfa Romeo",
+        "number": 13,
+    },
+    "aston_martin": {
+        "brand": "Aston Martin",
+        "number": 8,
+    },
+    "bm": {
+        "brand": "BMW",
+        "number": 177,
+    },
+    "buick": {
+        "brand": "Buick",
+        "number": 68,
+    },
+    "cadillac": {
+        "brand": "Cadillac",
+        "number": 94,
+    },
+    "chrysler": {
+        "brand": "Chrysler",
+        "number": 55,
+    },
+    "dodge": {
+        "brand": "Dodge",
+        "number": 112,
+    },
+    "ferrari": {
+        "brand": "Ferrari",
+        "number": 9,
+    },
+    "fiat": {
+        "brand": "FIAT",
+        "number": 24,
+    },
+    "genesis": {
+        "brand": "Genesis",
+        "number": 14,
+    },
+    "gmc": {
+        "brand": "GMC",
+        "number": 87,
+    },
+    "hummner": {
+        "brand": "HUMMBER",
+        "number": 11,
+    },
+    "isuzu": {
+        "brand": "Isuzu",
+        "number": 4,
+    },
+    "kia": {
+        "brand": "Kia",
+        "number": 141,
+    },
+    "lamborghini": {
+        "brand": "Lamborghini",
+        "number": 7,
+    },
+    "land_rover": {
+        "brand": "Land Rover",
+        "number": 72,
+    },
+    "porsche": {
+        "brand": "Porsche",
+        "number": 86,
+    },
+    "saab": {
+        "brand": "Saab",
+        "number": 18,
+    },
+    "suzuki": {
+        "brand": "Suzuki",
+        "number": 32,
+    },
+    "tesla": {
+        "brand": "Tesla",
+        "number": 18,
+    },
+}
+
+
 var contentItem; //main__content-item
 var contentItemDes; //main__content-item-des
 var media; //media main__content-item-media
@@ -403,7 +492,7 @@ window.onload = function () {
         contentItemLast = document.createElement("div");
         contentItemLast.setAttribute("class", "main__content-item-last row");
         itemLastFind = document.createElement("div");
-        itemLastFind.setAttribute("class", "item-last-find input-group col-5");
+        itemLastFind.setAttribute("class", "item-last-find input-group col-12 col-md-7 col-xl-5");
         inputLast = document.createElement("input");
         inputLast.setAttribute("class", "form-control");
         inputLast.setAttribute("type", "text");
@@ -424,7 +513,7 @@ window.onload = function () {
         // console.log(itemLastFind);
 
         let div2 = document.createElement("div");
-        div2.setAttribute("class", "col-7 item-last-price");
+        div2.setAttribute("class", "col-xl-7 col-12 col-md-5 item-last-price");
         for (let j = 0; j < mainJSON[i]["price"].length; j++) {
             let div3 = document.createElement("div");
             div3.setAttribute("class", "item-last-price-text");
@@ -467,6 +556,72 @@ window.onload = function () {
         contentItem.appendChild(contentItemDes);
         contentItem.appendChild(contentItemFooter);
         document.querySelector(".main__content-list").appendChild(contentItem);
-
     }
-} 
+}
+
+var selectItemHeading = document.querySelectorAll(".select-item-heading");
+for (let i = 0; i < selectItemHeading.length; i++) {
+    $(selectItemHeading[i]).on("click", function () {
+        $(this.querySelector("span i")).toggleClass("rotate");
+        $(selectItemHeading[i].querySelector(".select__side-list")).toggle(500);
+        $(document.querySelectorAll(".select__side-list")[i]).animate({
+            height: 'toggle'
+        });
+        console.log("cac");
+    })
+}
+
+var makeListCheck = false;
+
+document.querySelector(".show__all-select").addEventListener("click", function () {
+    console.log("cac");
+    var show_make_text;
+    var arrow;
+    if (makeListCheck === false) {
+        show_make_text = document.createTextNode("Show less Makes ");
+        this.textContent = "";
+        // this.querySelector(i).setAttribute("class", "fas fa-angle-up");
+        arrow = document.createElement("i");
+        arrow.setAttribute("class", "fas fa-angle-up");
+        this.appendChild(show_make_text);
+        this.appendChild(arrow);
+        makeListCheck = true;
+        let div;
+        let label;
+        let input;
+        let span;
+        for (let i in makesListAppend) {
+            div = document.createElement("div");
+            div.setAttribute("class", "checkbox");
+            input = document.createElement("input");
+            input.setAttribute("type", "checkbox");
+            label = document.createElement("label");
+            span = document.createElement("span");
+            span.textContent = "(" + makesListAppend[i]["number"] + ")";
+            label.appendChild(input);
+            label.appendChild(document.createTextNode(makesListAppend[i]["brand"]));
+            label.appendChild(span);
+            div.appendChild(label);
+            // console.log(div);
+            document.querySelector(".select__side-make-list").appendChild(div);
+            // console.log(label);
+        }
+    } else {
+        show_make_text = document.createTextNode("Show more Makes ");
+        this.textContent = "";
+        // this.querySelector(i).setAttribute("class", "fas fa-angle-up");
+        arrow = document.createElement("i");
+        arrow.setAttribute("class", "fas fa-angle-down");
+        this.appendChild(show_make_text);
+        this.appendChild(arrow);
+        var makeListItem = document.querySelectorAll(".select__side-make-list > div");
+        // console.log(makeListItem.length);
+        for (let i = 9; i < makeListItem.length; i++) {
+            document.querySelector(".select__side-make-list").removeChild(makeListItem[i]);
+        }
+        makeListCheck = false;
+    }
+
+    document.querySelector(".select__side-make-list")
+})
+
