@@ -19,6 +19,23 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 4,
+        "trimList": [
+            {
+                "trimItemHeader": "Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Sedan w/Premium Pkg »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Sedan w/Premium/A-Spec Pkg »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Sedan w/Technology/A-Spec Pkg »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+        ]
     },
     "Acura_RDX": {
         "header": "2021 Acura RDX",
@@ -33,6 +50,39 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 8,
+        "trimList": [
+            {
+                "trimItemHeader": "FWD »",
+                "trimitemList": ["$38.200", "23 City | 28 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD »",
+                "trimitemList": ["$40.200", "21 City | 27 Hwy", "4 Cyl", "AWD"],
+            }, {
+                "trimItemHeader": "FWD w/Technology Pkg »",
+                "trimitemList": ["$41.100", "22 City | 28 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Sedan w/Technology/A-Spec Pkg »",
+                "trimitemList": ["$44.100", "21 City | 27 Hwy", "4 Cyl", "AWD"],
+            },
+            {
+                "trimItemHeader": "FWD w/A-Spec Pkg »",
+                "trimitemList": ["$44.100", "21 City | 27 Hwy", "4 Cyl", "AWD"],
+            },
+            {
+                "trimItemHeader": "FWD w/Advance Pkg »",
+                "trimitemList": ["$46.0000", "22 City | 28 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD w/A-Spec Pkg »",
+                "trimitemList": ["$46.100", "21 City | 26 Hwy", "4 Cyl", "AWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD w/Advance Pkg »",
+                "trimitemList": ["$44.100", "21 City | 27 Hwy", "4 Cyl", "AWD"],
+            },
+        ]
     },
     "Acura_TLX": {
         "header": "2021 Acura TLX",
@@ -51,6 +101,38 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 8,
+        "trimList": [
+            {
+                "trimItemHeader": "FWD »",
+                "trimitemList": ["$27.500", "22 City | 31 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD »",
+                "trimitemList": ["$29.500", "21 City | 29 Hwy", "4 Cyl", "AWD"],
+            }, {
+                "trimItemHeader": "FWD w/Technology Package »",
+                "trimitemList": ["$23.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD w/Technology Package »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "FWD w/A-Spec Package »",
+                "trimitemList": ["$44.500", "41 City | 31 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD w/A-Spec Package »",
+                "trimitemList": ["$46.250", "21 City | 29 Hwy", "4 Cyl", "AWD"],
+            }, {
+                "trimItemHeader": "FWD w/Advance Package »",
+                "trimitemList": ["$32.250", "21 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "SH-AWD w/Advance Package »",
+                "trimitemList": ["$35.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_a4": {
         "header": "2021 Audi A4",
@@ -65,6 +147,42 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 9,
+        "trimList": [
+            {
+                "trimItemHeader": "Premium 40 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 40 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Premium Plus 40 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_a5": {
         "header": "2021 Audi A5",
@@ -79,6 +197,80 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 18,
+        "trimList": [
+            {
+                "trimItemHeader": "Premium 40 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 40 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 40 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 3.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_a6": {
         "header": "2021 Audi A6",
@@ -94,6 +286,38 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 8,
+        "trimList": [
+            {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Prestige 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "2.9 TFSI Premium Plus »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "2.9 TFSI Prestige »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+        ]
     },
     "Audi_a6_allroad": {
         "header": "2021 Audi A6 Allroad",
@@ -109,6 +333,16 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 2,
+        "trimList": [
+            {
+                "trimItemHeader": "3.0 TFSI Premium Plus »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "3.0 TFSI Premium Plus »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+        ]
     },
     "Audi_a7": {
         "header": "2021 Audi A7",
@@ -128,6 +362,27 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 5,
+        "trimList": [
+            {
+                "trimItemHeader": "Premium Plus 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Premium 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "2.9 TFSI Premium Plus »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "2.9 TFSI Prestige »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_a8": {
         "header": "2021 Audi A8",
@@ -143,6 +398,19 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 3,
+        "trimList": [
+            {
+                "trimItemHeader": "55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "60 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "4.0 TFSI »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_q3": {
         "header": "2021 Audi Q3",
@@ -158,6 +426,16 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 2,
+        "trimList": [
+            {
+                "trimItemHeader": "S line Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "S line Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_q7": {
         "header": "2021 Audi Q7",
@@ -173,6 +451,34 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 7,
+        "trimList": [
+            {
+                "trimItemHeader": "Premium 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 45 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Premium 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Premium Plus 4.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 4.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "Audi_q8": {
         "header": "2021 Audi Q8",
@@ -188,6 +494,27 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 5,
+        "trimList": [
+            {
+                "trimItemHeader": "Premium 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "Prestige 55 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Premium Plus 4.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Prestige 4.0 TFSI quattro »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+        ]
     },
     "BMW_2": {
         "header": "2021 BMW 2-Series",
@@ -207,6 +534,46 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 10,
+        "trimList": [
+            {
+                "trimItemHeader": "230i Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "228i xDrive Gran Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "230i xDrive Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "230i Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "230i xDrive Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M235i xDrive Gran Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M240i Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "M240i xDrive Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M240i Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M240i xDrive Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "BMW_3": {
         "header": "2021 BMW 3-Series",
@@ -226,6 +593,38 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 8,
+        "trimList": [
+            {
+                "trimItemHeader": "330i Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "330i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "330e Plug-In Hybrid »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "330e Plug-In Hybrid North America »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "330e xDrive Plug-In Hybrid »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "330e xDrive Plug-In Hybrid North America »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "M340i Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M340i Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "BMW_5": {
         "header": "2021 BMW 5-Series",
@@ -241,6 +640,38 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 8,
+        "trimList": [
+            {
+                "trimItemHeader": "530i Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "530i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "530e Plug-In Hybrid »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "540i Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "530e xDrive Plug-In Hybrid »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "540i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "M550i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "BMW_7": {
         "header": "2021 BMW 7-Series",
@@ -260,6 +691,32 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 6,
+        "trimList": [
+            {
+                "trimItemHeader": "740i Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "740i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "745e xDrive Plug-In Hybrid »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "750i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "ALPINA B7 xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M760i xDrive Sedan »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "BMW_8": {
         "header": "2021 BMW 8-Series",
@@ -275,6 +732,46 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 10,
+        "trimList": [
+            {
+                "trimItemHeader": "840i Gran Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "840i xDrive Gran Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "840i Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "840i xDrive Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "840i Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "840i xDrive Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M850i xDrive Gran Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }, {
+                "trimItemHeader": "M850i xDrive Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M850i xDrive Convertible »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "Gran Coupe »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
     },
     "BMW_X1": {
         "header": "2021 BMW X1",
@@ -290,6 +787,16 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 2,
+        "trimList": [
+            {
+                "trimItemHeader": "sDrive28i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "xDrive28i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+        ]
     },
     "BMW_X2": {
         "header": "2021 BMW X2",
@@ -305,6 +812,21 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 3,
+        "trimList": [
+            {
+                "trimItemHeader": "sDrive28i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "xDrive28i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M35i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+        ]
+
     },
     "BMW_X3": {
         "header": "2021 BMW X3",
@@ -320,6 +842,29 @@ var mainJSON = {
             }
         ],
         "numberOfTrims": 2,
+        "trimList": [
+            {
+                "trimItemHeader": "sDrive30i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "xDrive30i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "xDrive30e Plug-In Hybrid »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            },
+            {
+                "trimItemHeader": "M40i Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+            ,
+            {
+                "trimItemHeader": "Sports Activity Vehicle »",
+                "trimitemList": ["$25.950", "24 City | 34 Hwy", "4 Cyl", "FWD"],
+            }
+        ]
     },
 }
 
@@ -433,133 +978,136 @@ var footerLabel; //form-check-label
 var footerSeeAll; //item-footer-seeAll
 
 
-window.onload = function () {
-    const itemReadMore = "READ MORE » ";
-    // const itemReadMoreLink = document.createElement("a");
-    // itemReadMoreLink.appendChild(document.createTextNode(itemReadMore));
-    for (var i in mainJSON) {
-        contentItem = document.createElement("div");
-        contentItem.setAttribute("class", "main__content-item");
-        contentItemDes = document.createElement("div");
-        contentItemDes.setAttribute("class", "main__content-item-des");
-        media = document.createElement("div");
-        media.setAttribute("class", "media main__content-item-media");
-        itemImgDiv = document.createElement("div");
-        itemImgDiv.setAttribute("class", "item-img-div");
-        itemDesImg = document.createElement("img");
-        itemDesImg.setAttribute("class", "item-des-img");
-        itemDesImg.setAttribute("src", mainJSON[i]["img"]);
-        itemImgDiv.appendChild(itemDesImg);
+// window.onload = function () {
+const itemReadMore = "READ MORE » ";
+// const itemReadMoreLink = document.createElement("a");
+// itemReadMoreLink.appendChild(document.createTextNode(itemReadMore));
+for (var i in mainJSON) {
+    contentItem = document.createElement("div");
+    contentItem.setAttribute("class", "main__content-item");
+    contentItemDes = document.createElement("div");
+    contentItemDes.setAttribute("class", "main__content-item-des");
+    media = document.createElement("div");
+    media.setAttribute("class", "media main__content-item-media");
+    itemImgDiv = document.createElement("div");
+    itemImgDiv.setAttribute("class", "item-img-div");
+    itemDesImg = document.createElement("img");
+    itemDesImg.setAttribute("class", "item-des-img");
+    itemDesImg.setAttribute("src", mainJSON[i]["img"]);
+    itemImgDiv.appendChild(itemDesImg);
 
-        mediaBody = document.createElement("div");
-        mediaBody.setAttribute("class", "media-body");
-        let link = document.createElement("a");
-        link.setAttribute("class", "item-header-link");
-        link.setAttribute("href", "#");
-        link.appendChild(document.createTextNode(mainJSON[i]["header"]));
+    mediaBody = document.createElement("div");
+    mediaBody.setAttribute("class", "media-body");
+    let link = document.createElement("a");
+    link.setAttribute("class", "item-header-link");
+    link.setAttribute("href", "#");
+    link.appendChild(document.createTextNode(mainJSON[i]["header"]));
 
 
-        orderInList = document.createElement("p");
+    orderInList = document.createElement("p");
+    let strong = document.createElement("strong");
+    strong.textContent = mainJSON[i]["order"];
+    orderInList.appendChild(strong);
+    orderInList.appendChild(document.createTextNode("  in  "));
+    let link2 = document.createElement("a");
+    link2.setAttribute("href", "#");
+    link2.appendChild(document.createTextNode(mainJSON[i]["brand"]));
+    orderInList.appendChild(link2);
+    orderInList.setAttribute("class", "order-in-list");
+
+
+    itemTextDes = document.createElement("p");
+    itemTextDes.appendChild(document.createTextNode(mainJSON[i]["textContent"]));
+    const itemReadMoreLink = document.createElement("a");
+    itemReadMoreLink.appendChild(document.createTextNode(itemReadMore));
+    itemReadMoreLink.setAttribute("class", "item-readmore");
+    itemReadMoreLink.setAttribute("href", "#");
+    itemTextDes.setAttribute("class", "item-text-description");
+    itemTextDes.appendChild(itemReadMoreLink);
+
+
+    mediaBody.appendChild(link);
+    mediaBody.appendChild(orderInList);
+    mediaBody.appendChild(itemTextDes);
+    // console.log(mediaBody);
+    media.appendChild(itemImgDiv);
+    media.appendChild(mediaBody);
+    // console.log(media);
+
+    contentItemLast = document.createElement("div");
+    contentItemLast.setAttribute("class", "main__content-item-last row");
+    itemLastFind = document.createElement("div");
+    itemLastFind.setAttribute("class", "item-last-find input-group col-12 col-md-7 col-xl-5");
+    inputLast = document.createElement("input");
+    inputLast.setAttribute("class", "form-control");
+    inputLast.setAttribute("type", "text");
+    inputLast.setAttribute("placeholder", "Zip Code");
+    // console.log(inputLast);
+
+    let div = document.createElement("div");
+    div.setAttribute("class", "input-group-append");
+    buttonLast = document.createElement("button");
+    buttonLast.setAttribute("class", "btn btn-danger text-white");
+    buttonLast.setAttribute("type", "button");
+    buttonLast.textContent = "Find Best Price";
+    // console.log(buttonLast);
+    div.appendChild(buttonLast);
+
+    itemLastFind.appendChild(inputLast);
+    itemLastFind.appendChild(div);
+    // console.log(itemLastFind);
+
+    let div2 = document.createElement("div");
+    div2.setAttribute("class", "col-xl-7 col-12 col-md-5 item-last-price");
+    for (let j = 0; j < mainJSON[i]["price"].length; j++) {
+        let div3 = document.createElement("div");
+        div3.setAttribute("class", "item-last-price-text");
         let strong = document.createElement("strong");
-        strong.textContent = mainJSON[i]["order"];
-        orderInList.appendChild(strong);
-        orderInList.appendChild(document.createTextNode("  in  "));
-        let link2 = document.createElement("a");
-        link2.setAttribute("href", "#");
-        link2.appendChild(document.createTextNode(mainJSON[i]["brand"]));
-        orderInList.appendChild(link2);
-        orderInList.setAttribute("class", "order-in-list");
-
-
-        itemTextDes = document.createElement("p");
-        itemTextDes.appendChild(document.createTextNode(mainJSON[i]["textContent"]));
-        const itemReadMoreLink = document.createElement("a");
-        itemReadMoreLink.appendChild(document.createTextNode(itemReadMore));
-        itemReadMoreLink.setAttribute("class", "item-readmore");
-        itemReadMoreLink.setAttribute("href", "#");
-        itemTextDes.setAttribute("class", "item-text-description");
-        itemTextDes.appendChild(itemReadMoreLink);
-
-
-        mediaBody.appendChild(link);
-        mediaBody.appendChild(orderInList);
-        mediaBody.appendChild(itemTextDes);
-        // console.log(mediaBody);
-        media.appendChild(itemImgDiv);
-        media.appendChild(mediaBody);
-        // console.log(media);
-
-        contentItemLast = document.createElement("div");
-        contentItemLast.setAttribute("class", "main__content-item-last row");
-        itemLastFind = document.createElement("div");
-        itemLastFind.setAttribute("class", "item-last-find input-group col-12 col-md-7 col-xl-5");
-        inputLast = document.createElement("input");
-        inputLast.setAttribute("class", "form-control");
-        inputLast.setAttribute("type", "text");
-        inputLast.setAttribute("placeholder", "Zip Code");
-        // console.log(inputLast);
-
-        let div = document.createElement("div");
-        div.setAttribute("class", "input-group-append");
-        buttonLast = document.createElement("button");
-        buttonLast.setAttribute("class", "btn btn-danger text-white");
-        buttonLast.setAttribute("type", "button");
-        buttonLast.textContent = "Find Best Price";
-        // console.log(buttonLast);
-        div.appendChild(buttonLast);
-
-        itemLastFind.appendChild(inputLast);
-        itemLastFind.appendChild(div);
-        // console.log(itemLastFind);
-
-        let div2 = document.createElement("div");
-        div2.setAttribute("class", "col-xl-7 col-12 col-md-5 item-last-price");
-        for (let j = 0; j < mainJSON[i]["price"].length; j++) {
-            let div3 = document.createElement("div");
-            div3.setAttribute("class", "item-last-price-text");
-            let strong = document.createElement("strong");
-            strong.textContent = mainJSON[i]["price"][j]["strong"];
-            div3.appendChild(strong);
-            let span = document.createElement("span");
-            span.textContent = mainJSON[i]["price"][j]["span"];
-            div3.appendChild(span);
-            div2.appendChild(div3);
-            // console.log(div3);
-        }
-        contentItemLast.appendChild(itemLastFind);
-        contentItemLast.appendChild(div2);
-        // console.log(contentItemLast);
-
-        contentItemFooter = document.createElement("div");
-        contentItemFooter.setAttribute("class", "main-content-item-footer");
-        footerInput = document.createElement("input");
-        footerInput.setAttribute("class", "form-check-input");
-        footerInput.setAttribute("type", "checkbox");
-        contentItemFooter.appendChild(footerInput);
-        footerLabel = document.createElement("label");
-        footerLabel.setAttribute("class", "form-check-label");
-        footerLabel.appendChild(document.createTextNode("Add to Compare"));
-        contentItemFooter.append(footerLabel);
-        footerSeeAll = document.createElement("strong");
-        footerSeeAll.setAttribute("class", "item-footer-seeAll");
-        let footerTextNode = document.createTextNode("SEE ALL " + mainJSON[i]["numberOfTrims"] + " TRIMS");
-        let i1 = document.createElement("i");
-        i1.setAttribute("class", "fas fa-angle-down");
-        footerSeeAll.appendChild(footerTextNode);
-        footerSeeAll.appendChild(i1);
-        contentItemFooter.appendChild(footerSeeAll);
-        // console.log(footerSeeAll);
-
-        contentItemDes.appendChild(media);
-        contentItemDes.appendChild(contentItemLast);
-        // console.log(contentItemDes);
-        contentItem.appendChild(contentItemDes);
-        contentItem.appendChild(contentItemFooter);
-        document.querySelector(".main__content-list").appendChild(contentItem);
+        strong.textContent = mainJSON[i]["price"][j]["strong"];
+        div3.appendChild(strong);
+        let span = document.createElement("span");
+        span.textContent = mainJSON[i]["price"][j]["span"];
+        div3.appendChild(span);
+        div2.appendChild(div3);
+        // console.log(div3);
     }
+    contentItemLast.appendChild(itemLastFind);
+    contentItemLast.appendChild(div2);
+    // console.log(contentItemLast);
+
+    contentItemFooter = document.createElement("div");
+    contentItemFooter.setAttribute("class", "main-content-item-footer");
+    footerInput = document.createElement("input");
+    footerInput.setAttribute("class", "form-check-input");
+    footerInput.setAttribute("type", "checkbox");
+    contentItemFooter.appendChild(footerInput);
+    footerLabel = document.createElement("label");
+    footerLabel.setAttribute("class", "form-check-label");
+    footerLabel.appendChild(document.createTextNode("Add to Compare"));
+    contentItemFooter.append(footerLabel);
+    footerSeeAll = document.createElement("strong");
+    footerSeeAll.setAttribute("class", "item-footer-seeAll");
+    let footerTextNode = document.createTextNode("SEE ALL " + mainJSON[i]["numberOfTrims"] + " TRIMS");
+    let i1 = document.createElement("i");
+    i1.setAttribute("class", "fas fa-angle-down");
+    footerSeeAll.appendChild(footerTextNode);
+    footerSeeAll.appendChild(i1);
+    contentItemFooter.appendChild(footerSeeAll);
+    // console.log(footerSeeAll);
+
+    contentItemDes.appendChild(media);
+    contentItemDes.appendChild(contentItemLast);
+    // console.log(contentItemDes);
+    contentItem.appendChild(contentItemDes);
+    contentItem.appendChild(contentItemFooter);
+    document.querySelector(".main__content-list").appendChild(contentItem);
 }
+// }
 
 var selectItemHeading = document.querySelectorAll(".select-item-heading");
+// var concac = document.querySelectorAll(".main__content-item");
+// console.log(selectItemHeading);
+// console.log(concac);
 for (let i = 0; i < selectItemHeading.length; i++) {
     $(selectItemHeading[i]).on("click", function () {
         $(this.querySelector("span i")).toggleClass("rotate");
@@ -621,7 +1169,69 @@ document.querySelector(".show__all-select").addEventListener("click", function (
         }
         makeListCheck = false;
     }
+});
 
-    document.querySelector(".select__side-make-list")
-})
+var itemFooterAll = [];
+for (let i in mainJSON) {
+    itemFooterAll.push(mainJSON[i]["trimList"]);
+}
+
+// console.log(itemFooterAll);
+
+var itemFooterSeeAll = document.querySelectorAll(".item-footer-seeAll");
+var itemFooterCheck = new Array(itemFooterSeeAll.length).fill(false);
+
+for (let i = 0; i < itemFooterSeeAll.length; i++) {
+    let trimContainer;
+    let trimList;
+    itemFooterSeeAll[i].addEventListener("click", function () {
+        if (!itemFooterCheck[i]) {
+            trimContainer = document.createElement("div");
+            trimContainer.setAttribute("class", "trim__container");
+            trimList = document.createElement("ul");
+            let trimItem;
+            let trimItemHeader;
+            let trimItemList;
+            for (let j = 0; j < itemFooterAll[i].length; j++) {
+                trimItem = document.createElement("li");
+                trimItem.setAttribute("class", "trim-item");
+                trimItemHeader = document.createElement("h2");
+                trimItemHeader.textContent = itemFooterAll[i][j]["trimItemHeader"];
+                trimItemHeader.setAttribute("class", "trim-item__header");
+                trimItemList = document.createElement("ul");
+                trimItemList.setAttribute("class", "trim-item__list");
+                let x;
+                for (let k = 0; k < itemFooterAll[i][j]["trimitemList"].length; k++) {
+                    x = document.createElement("li");
+                    x.textContent = itemFooterAll[i][j]["trimitemList"][k];
+                    trimItemList.appendChild(x);
+                }
+                trimItem.appendChild(trimItemHeader);
+                trimItem.appendChild(trimItemList);
+                trimList.appendChild(trimItem);
+            }
+            trimContainer.appendChild(trimList);
+            $(trimContainer).insertAfter(document.querySelectorAll(".main__content-item-des")[i]);
+            itemFooterCheck[i] = true;
+            this.textContent = "";
+            let text = document.createTextNode("HIDE TRIM");
+            this.appendChild(text);
+            let Itag = document.createElement("i");
+            Itag.setAttribute("class", "fa fa-angle-up");
+            this.appendChild(Itag);
+        } else {
+            this.textContent = "";
+            let text = document.createTextNode("SEE ALL " + itemFooterAll[i].length + " TRIMS");
+            this.appendChild(text);
+            let Itag = document.createElement("i");
+            Itag.setAttribute("class", "fa fa-angle-down");
+            this.appendChild(Itag);
+            var res = document.querySelectorAll(".main__content-item")[i];
+            var del = res.querySelector(".trim__container");
+            $(del).remove();
+            itemFooterCheck[i] = false;
+            // console.log(itemFooterCheck[i]);
+        }
+    });
+}
 

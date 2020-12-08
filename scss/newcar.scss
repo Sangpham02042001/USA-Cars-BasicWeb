@@ -6,6 +6,10 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 @mixin respon {
   width: 70%;
   min-width: 1180px;
@@ -23,7 +27,7 @@ a:hover {
   transform: translateY(0);
   position: absolute;
   right: 40px;
-  padding: 0;
+  padding: 0 20px;
   border: none;
   .menu__navbar {
     background-color: transparent;
@@ -35,13 +39,27 @@ a:hover {
       min-width: 120px;
       align-self: center;
       position: relative;
+      cursor: pointer;
       top: -2px;
+      option {
+        font-size: 1.2rem;
+        padding: 5px;
+      }
     }
     .search {
-      padding: 5px 5px;
+      padding: 6px;
       background-color: rgb(196, 33, 42);
+      border: none;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      color: var(--white-color);
+      font-weight: 800;
+      cursor: pointer;
       i {
         font-size: 1.4rem;
+      }
+      &:hover {
+        background-color: rgb(206, 43, 43);
       }
     }
   }
@@ -290,7 +308,7 @@ a:hover {
   .item-last-price {
     padding-left: 0;
     .item-last-price-text {
-      font-size: 1.2rem;
+      font-size: 1rem;
       strong {
         font-size: 1.5rem;
         font-weight: 600;
@@ -463,96 +481,27 @@ a:hover {
   }
 }
 
-@mixin repon_for_header_footer {
-  @media only screen and (max-width: 1280px) {
-    footer {
-      .footer__list {
-        min-width: 96%;
-      }
-      .footer {
-        min-width: 96%;
-        .footer-2 {
-          flex-direction: column;
-          // .footer-2-list {
-          //   dis
-          // }
-        }
-      }
-    }
-  }
+/* ---------------------------- SEE ALL -------------------- */
+.trim__container {
+  padding: 10px;
+  border-bottom: 1px solid rgb(172, 170, 170);
+}
 
-  @media only screen and (max-width: 1024px) {
-    .header {
-      .header__list {
-        display: none;
-      }
-    }
-    footer {
-      .footer {
-        flex-direction: column;
-        text-align: center;
-        .footer-logo {
-          margin-bottom: 16px;
-        }
-        .footer__info {
-          .footer-1 {
-            width: 70%;
-            margin: 0 auto;
-          }
-          .footer-2 {
-            flex-direction: row;
-            justify-content: center;
-          }
-        }
-      }
-    }
-  }
+.trim-item {
+  padding: 5px;
+}
 
-  @media only screen and (max-width: 640px) {
-    footer {
-      .footer__list {
-        flex-direction: column;
-        .footer__list-item {
-          display: flex;
-          justify-content: center;
-          padding: 10px 0;
-          p {
-            display: none;
-          }
-          .footer__col_header {
-            display: block;
-          }
-          .footer__list-col {
-            display: none;
-          }
-        }
-      }
-      .footer {
-        .footer__info {
-          width: 100%;
-          .footer-1 {
-            width: 80%;
-            justify-content: center;
-            flex-wrap: wrap;
-            .footer__info-link {
-              margin-bottom: 10px;
-            }
-          }
-          .footer-2 {
-            flex-direction: column;
-            justify-content: center;
-            .footer-2-list {
-              display: flex;
-              justify-content: center;
-              flex-wrap: wrap;
-              .footer__link-benifit {
-                font-size: 1rem;
-              }
-            }
-          }
-        }
-      }
-    }
+.trim-item__header {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.trim-item__list {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  li {
+    font-size: 1.4rem;
   }
 }
 
@@ -589,14 +538,11 @@ a:hover {
       font-size: 1.3rem;
     }
   }
-}
 
-// @media only screen and (max-width: 992px) {
-//   .moreOption__list {
-//     grid-template-columns: auto auto;
-//     row-gap: 20px;
-//   }
-// }
+  // .trim-item__list {
+  //   width: 70%;
+  // }
+}
 
 @media only screen and (max-width: 768px) {
   .main__content-item-media {
@@ -627,9 +573,7 @@ a:hover {
     .item-last-find {
       padding-left: 0;
       max-width: 100%;
-      input.form-control {
-        // width: 50%;
-      }
+
       .input-group-append {
         flex: 1;
         button {
@@ -637,11 +581,6 @@ a:hover {
         }
       }
     }
-    // .item-last-price {
-    //   width: 100%;
-    //   display: flex;
-    //   justify-content: space-between;
-    // }
   }
   .moreOption__list {
     grid-template-columns: auto auto;
@@ -655,6 +594,12 @@ a:hover {
     .browse-item-img {
       max-width: 140px;
     }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .trim-item__list {
+    width: 100%;
   }
 }
 
@@ -679,6 +624,12 @@ a:hover {
   .browse__side-footer {
     margin-top: 20px;
   }
-}
 
-@include repon_for_header_footer;
+  .trim-item__list {
+    // display: grid;
+    // grid-template-columns: auto auto;
+    li {
+      font-size: 1.4rem;
+    }
+  }
+}

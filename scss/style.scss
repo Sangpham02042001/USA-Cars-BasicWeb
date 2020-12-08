@@ -1747,6 +1747,19 @@ footer {
       }
     }
   }
+
+  .advice_list_more {
+    .advice_list {
+      .advice_list_item {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // body {
+  //   font-size: 1rem;
+  // }
+
   footer {
     .footer__list {
       flex-direction: column;
@@ -1811,7 +1824,7 @@ footer {
       .november_deals-item {
         margin-right: 10px;
         .november_deals-item-header {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           display: flex;
           justify-content: center;
           padding: 10px;
