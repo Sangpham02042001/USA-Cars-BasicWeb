@@ -13,17 +13,23 @@
 </head>
 
 <body>
+
+    <div id="preLoader">
+        <div id="loader"></div>
+    </div>
+
+
     <header class="header">
-        <a href="../vendors/index.html" class="header__img_link">
+        <a href="../html/index.html" class="header__img_link">
             <img src="../resources/img/usn-logo-large.png" alt="" class="header__img">
         </a>
-        <a href="../vendors/index.html" class="header__title">
+        <a href="../html/index.html" class="header__title">
             CARS
             <span class="header__title_span"> » </span>
         </a>
         <ul class="header__list">
             <li class="header__list-item">
-                <a href="../vendors/index.html" class="header__list-item-link">New Cars</a>
+                <a href="../html/newcars.html" class="header__list-item-link">New Cars</a>
                 <div class="header__item-dropdown">
                     <a href="" class="header__dropdown-item">New Cars For Sale</a>
                     <a href="" class="header__dropdown-item">Research Cars</a>
@@ -35,7 +41,7 @@
                 </div>
             </li>
             <li class="header__list-item">
-                <a href="" class="header__list-item-link">Used Cars</a>
+                <a href="../html/usedcars.html" class="header__list-item-link">Used Cars</a>
                 <div class="header__item-dropdown">
                     <a href="" class="header__dropdown-item">Used Cars For Sale</a>
                     <a href="" class="header__dropdown-item">Certified Pre-Owned Cars for Sale</a>
@@ -611,11 +617,13 @@
                     <div class="moreOption-item-text">New Car Rankings</div>
                 </a>
                 <a href="#" class="moreOption-item">
-                    <img src="../resources/img/new-cars-img/1_title_2020_kia_sorento_640x420.jpg" alt="" class="moreOption-item-img">
+                    <img src="../resources/img/new-cars-img/1_title_2020_kia_sorento_640x420.jpg" alt=""
+                        class="moreOption-item-img">
                     <div class="moreOption-item-text">Best Cars for the Money</div>
                 </a>
                 <a href="#" class="moreOption-item">
-                    <img src="../resources/img/new-cars-img/My_Post_copy_640x420.jpg" alt="" class="moreOption-item-img">
+                    <img src="../resources/img/new-cars-img/My_Post_copy_640x420.jpg" alt=""
+                        class="moreOption-item-img">
                     <div class="moreOption-item-text">Best Cars for Families</div>
                 </a>
             </div>
@@ -719,7 +727,7 @@
     <div class="modal2">
         <div class="modal-content">
             <div class="modal__header">
-                <a href="" class="modal__header-link">CARS</a>
+                <a href="../html/index.html" class="modal__header-link">CARS</a>
                 <span>&times;</span>
             </div>
             <select name="make" class="make2">
@@ -839,8 +847,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../vendors/index.js"></script>
-    <script src="../newcars/newcars.js"></script>
-</body>
+    <script src="../js/base.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/newcars.js"></script>
+    </body>
 
 </html>

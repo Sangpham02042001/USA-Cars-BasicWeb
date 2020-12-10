@@ -3,6 +3,10 @@
   transition: all 0.5s;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 :root {
   --white-color: #ffffff;
   --text-color: #242323;
@@ -24,7 +28,12 @@ a {
 
 .stop-scrolling {
   height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.enable-scrolling {
+  height: 100%;
+  overflow-y: auto;
 }
 
 @mixin header_link_hover {
@@ -123,6 +132,7 @@ a {
         height: 4px;
         animation: header_link_animation ease-in-out 0.4s;
         margin: 0 auto;
+        z-index: 1;
         background-color: rgb(230, 16, 16);
         top: 94%;
         left: 10%;
@@ -264,7 +274,7 @@ footer {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: rgba(190, 184, 184, 0.6);
+  background-color: rgb(255, 255, 255, 0.6);
   width: 0;
   z-index: 1;
   height: 100%;
@@ -288,12 +298,13 @@ footer {
     .modal__header-link {
       @include header_link_hover;
       font-size: 1.6rem;
+      font-weight: 800;
     }
     span {
       position: absolute;
       right: 0;
       cursor: pointer;
-      top: -3px;
+      top: -7px;
       font-size: 2.4rem;
       color: var(--white-color);
       &:hover {
@@ -443,6 +454,130 @@ footer {
         }
       }
     }
+  }
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.menu {
+  transform: translateY(0);
+  position: absolute;
+  right: 40px;
+  padding: 0 20px;
+  border: none;
+  .menu__navbar {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    select {
+      padding: 9px;
+      font-size: 1rem;
+      min-width: 120px;
+      align-self: center;
+      position: relative;
+      cursor: pointer;
+      top: -2px;
+      option {
+        font-size: 1.2rem;
+        padding: 5px;
+      }
+    }
+    .search {
+      padding: 6px;
+      background-color: rgb(196, 33, 42);
+      border: none;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      color: var(--white-color);
+      font-weight: 800;
+      cursor: pointer;
+      i {
+        font-size: 1.4rem;
+      }
+      &:hover {
+        background-color: rgb(206, 43, 43);
+      }
+    }
+  }
+}
+
+#preLoader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: #ffffff;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
   }
 }
 

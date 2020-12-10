@@ -7,21 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/base.css"> -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+
+    <div id="preLoader">
+        <div id="loader"></div>
+    </div>
+
     <header class="header">
-        <a href="#" class="header__img_link">
+        <a href="../html/index.html" class="header__img_link">
             <img src="../resources/img/usn-logo-large.png" alt="" class="header__img">
         </a>
-        <a href="#" class="header__title">
+        <a href="../html/index.html" class="header__title">
             CARS
             <span class="header__title_span"> » </span>
         </a>
         <ul class="header__list">
             <li class="header__list-item">
-                <a href="../newcars/newcars.html" class="header__list-item-link">New Cars</a>
+                <a href="../html/newcars.html" class="header__list-item-link">New Cars</a>
                 <div class="header__item-dropdown">
                     <a href="" class="header__dropdown-item">New Cars For Sale</a>
                     <a href="" class="header__dropdown-item">Research Cars</a>
@@ -33,7 +39,7 @@
                 </div>
             </li>
             <li class="header__list-item">
-                <a href="" class="header__list-item-link">Used Cars</a>
+                <a href="../html/usedcars.html" class="header__list-item-link">Used Cars</a>
                 <div class="header__item-dropdown">
                     <a href="" class="header__dropdown-item">Used Cars For Sale</a>
                     <a href="" class="header__dropdown-item">Certified Pre-Owned Cars for Sale</a>
@@ -1007,7 +1013,7 @@
     <div class="modal2">
         <div class="modal-content">
             <div class="modal__header">
-                <a href="" class="modal__header-link">CARS</a>
+                <a href="#" class="modal__header-link">CARS</a>
                 <span>&times;</span>
             </div>
             <select name="make" class="make2">
@@ -1125,9 +1131,15 @@
             <ul class="modal__details-list"></ul>
         </div>
     </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../vendors/index.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-data-base.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script> -->
+    <script src="../js/base.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

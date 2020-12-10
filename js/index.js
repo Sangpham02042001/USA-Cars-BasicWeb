@@ -66,6 +66,7 @@ const header__menu = document.querySelector(".header__menu");
 header__menu.addEventListener("click", function () {
     document.getElementsByClassName("modal2")[0].style.width = "100%";
     $("body").addClass("stop-scrolling");
+    $("body").removeClass("enable-scrolling");
     if (document.body.offsetWidth <= "640") {
         document.getElementsByClassName("modal-content")[0].style.width = "100%";
     } else {
@@ -79,6 +80,7 @@ function toggleWidth() {
     document.getElementsByClassName("modal2")[0].style.width = "0";
     document.getElementsByClassName("modal-content")[0].style.width = "0";
     $("body").removeClass("stop-scrolling");
+    $("body").addClass("enable-scrolling");
     if (document.body.offsetWidth <= 640) {
         document.getElementsByClassName("modal-content")[0].style.right = "-100%"
     } else {
@@ -154,7 +156,7 @@ function ModalLink(abc) {
     document.querySelector(".modal__details-header").textContent = "";
     document.querySelector(".modal__details-header").appendChild(t);
     var href = abc.split(" ").join("").toLowerCase();
-    document.querySelector(".modal__details-header").setAttribute("href", "../" + href + "/" + href + ".html");
+    document.querySelector(".modal__details-header").setAttribute("href", "../html/" + href + ".html");
     $(".modal__details-list").find('li').remove();
     for (let i = 0; i < modalJSON[abc].length; i++) {
         var li = document.createElement("LI");

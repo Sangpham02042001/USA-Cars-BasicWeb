@@ -956,7 +956,6 @@ const makesListAppend = {
     },
 }
 
-
 var contentItem; //main__content-item
 var contentItemDes; //main__content-item-des
 var media; //media main__content-item-media

@@ -1,6 +1,4 @@
-.header__list-item-link {
-  top: 0 !important;
-}
+// .hea9
 
 a:hover {
   text-decoration: none;
@@ -130,10 +128,6 @@ ul {
   background-color: rgb(247, 247, 247);
   padding: 30px 0;
 }
-
-// .container {
-//   min-width: 1180px;
-// }
 
 .select__side-item {
   padding: 15px 0;
@@ -303,6 +297,7 @@ ul {
     button {
       font-weight: 600;
       font-size: 1.4rem;
+      z-index: 0 !important;
     }
   }
   .item-last-price {
