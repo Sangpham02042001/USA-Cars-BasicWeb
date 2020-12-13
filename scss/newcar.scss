@@ -509,7 +509,7 @@ ul {
 }
 
 @media only screen and (max-width: 1280px) {
-  .container {
+  .new-car-container {
     min-width: 98%;
   }
   .item-des-img {
@@ -589,6 +589,12 @@ ul {
     .browse-item-img {
       max-width: 140px;
     }
+  }
+  .introduce__header {
+    font-size: 2.2rem;
+  }
+  .introduce__text {
+    font-size: 1.4rem;
   }
 }
 

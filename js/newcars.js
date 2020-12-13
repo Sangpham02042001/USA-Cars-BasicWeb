@@ -1,7 +1,7 @@
 var mainList = document.querySelector(".main__content-list");
 const imgLink = "../resources/img/new-cars-img/";
 
-var mainJSON = {
+var newmainJSON = {
     "Acura_ILX": {
         "header": "2021 Acura ILX",
         "img": imgLink + "2021_acura_ilx_angularfront.jpg",
@@ -981,7 +981,7 @@ var footerSeeAll; //item-footer-seeAll
 const itemReadMore = "READ MORE » ";
 // const itemReadMoreLink = document.createElement("a");
 // itemReadMoreLink.appendChild(document.createTextNode(itemReadMore));
-for (var i in mainJSON) {
+for (var i in newmainJSON) {
     contentItem = document.createElement("div");
     contentItem.setAttribute("class", "main__content-item");
     contentItemDes = document.createElement("div");
@@ -992,7 +992,7 @@ for (var i in mainJSON) {
     itemImgDiv.setAttribute("class", "item-img-div");
     itemDesImg = document.createElement("img");
     itemDesImg.setAttribute("class", "item-des-img");
-    itemDesImg.setAttribute("src", mainJSON[i]["img"]);
+    itemDesImg.setAttribute("src", newmainJSON[i]["img"]);
     itemImgDiv.appendChild(itemDesImg);
 
     mediaBody = document.createElement("div");
@@ -1000,23 +1000,23 @@ for (var i in mainJSON) {
     let link = document.createElement("a");
     link.setAttribute("class", "item-header-link");
     link.setAttribute("href", "#");
-    link.appendChild(document.createTextNode(mainJSON[i]["header"]));
+    link.appendChild(document.createTextNode(newmainJSON[i]["header"]));
 
 
     orderInList = document.createElement("p");
     let strong = document.createElement("strong");
-    strong.textContent = mainJSON[i]["order"];
+    strong.textContent = newmainJSON[i]["order"];
     orderInList.appendChild(strong);
     orderInList.appendChild(document.createTextNode("  in  "));
     let link2 = document.createElement("a");
     link2.setAttribute("href", "#");
-    link2.appendChild(document.createTextNode(mainJSON[i]["brand"]));
+    link2.appendChild(document.createTextNode(newmainJSON[i]["brand"]));
     orderInList.appendChild(link2);
     orderInList.setAttribute("class", "order-in-list");
 
 
     itemTextDes = document.createElement("p");
-    itemTextDes.appendChild(document.createTextNode(mainJSON[i]["textContent"]));
+    itemTextDes.appendChild(document.createTextNode(newmainJSON[i]["textContent"]));
     const itemReadMoreLink = document.createElement("a");
     itemReadMoreLink.appendChild(document.createTextNode(itemReadMore));
     itemReadMoreLink.setAttribute("class", "item-readmore");
@@ -1058,14 +1058,14 @@ for (var i in mainJSON) {
 
     let div2 = document.createElement("div");
     div2.setAttribute("class", "col-xl-7 col-12 col-md-5 item-last-price");
-    for (let j = 0; j < mainJSON[i]["price"].length; j++) {
+    for (let j = 0; j < newmainJSON[i]["price"].length; j++) {
         let div3 = document.createElement("div");
         div3.setAttribute("class", "item-last-price-text");
         let strong = document.createElement("strong");
-        strong.textContent = mainJSON[i]["price"][j]["strong"];
+        strong.textContent = newmainJSON[i]["price"][j]["strong"];
         div3.appendChild(strong);
         let span = document.createElement("span");
-        span.textContent = mainJSON[i]["price"][j]["span"];
+        span.textContent = newmainJSON[i]["price"][j]["span"];
         div3.appendChild(span);
         div2.appendChild(div3);
         // console.log(div3);
@@ -1086,7 +1086,7 @@ for (var i in mainJSON) {
     contentItemFooter.append(footerLabel);
     footerSeeAll = document.createElement("strong");
     footerSeeAll.setAttribute("class", "item-footer-seeAll");
-    let footerTextNode = document.createTextNode("SEE ALL " + mainJSON[i]["numberOfTrims"] + " TRIMS");
+    let footerTextNode = document.createTextNode("SEE ALL " + newmainJSON[i]["numberOfTrims"] + " TRIMS");
     let i1 = document.createElement("i");
     i1.setAttribute("class", "fas fa-angle-down");
     footerSeeAll.appendChild(footerTextNode);
@@ -1171,8 +1171,8 @@ document.querySelector(".show__all-select").addEventListener("click", function (
 });
 
 var itemFooterAll = [];
-for (let i in mainJSON) {
-    itemFooterAll.push(mainJSON[i]["trimList"]);
+for (let i in newmainJSON) {
+    itemFooterAll.push(newmainJSON[i]["trimList"]);
 }
 
 // console.log(itemFooterAll);
