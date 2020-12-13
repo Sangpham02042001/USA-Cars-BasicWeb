@@ -206,6 +206,174 @@ const usedColor = [
         "text": "Unspecified",
         "span": "(116047)"
     },
+];
+
+const usedBody = [
+    {
+        "text": "Converible",
+        "span": "(10676)"
+    },
+    {
+        "text": "Coupe",
+        "span": "(32364)"
+    },
+    {
+        "text": "Hathcback",
+        "span": "(423432)"
+    },
+    {
+        "text": "Minivan",
+        "span": "(3942)"
+    },
+    {
+        "text": "Pickup",
+        "span": "(31234)"
+    },
+    {
+        "text": "Sedan",
+        "span": "(28232)"
+    },
+    {
+        "text": "SUV",
+        "span": "(3234)"
+    },
+    {
+        "text": "Van",
+        "span": "(6315)"
+    },
+    {
+        "text": "Wagon",
+        "span": "(116047)"
+    },
+    {
+        "text": "Other",
+        "span": "(668)"
+    },
+];
+
+const driveTrain = [
+    {
+        "text": "AWD/4WD",
+        "span": "(402590)"
+    },
+    {
+        "text": "FWD",
+        "span": "(42342)"
+    },
+    {
+        "text": "RWD",
+        "span": "(3423)"
+    },
+    {
+        "text": "Other",
+        "span": "(6113)"
+    }
+];
+
+const usedEngine = [
+    {
+        "text": "Electric",
+        "span": "(45523)"
+    },
+    {
+        "text": "Hybrid",
+        "span": "(12975)"
+    },
+    {
+        "text": "Rotary",
+        "span": "(423423)"
+    },
+    {
+        "text": "12 Cyl",
+        "span": "(3242)"
+    },
+    {
+        "text": "8 Cyl",
+        "span": "(423421)"
+    },
+    {
+        "text": "6 Cyl",
+        "span": "(429043)"
+    },
+    {
+        "text": "5 Cyl",
+        "span": "(5544)"
+    },
+    {
+        "text": "4 Cyl",
+        "span": "(4332)"
+    },
+    {
+        "text": "3 Cyl",
+        "span": "(668)"
+    },
+    {
+        "text": "Other",
+        "span": "(423432)"
+    },
+]
+
+const transMission = [
+    {
+        "text": "Automatic",
+        "span": "(31238)"
+    },
+    {
+        "text": "Manual",
+        "span": "(27943)"
+    },
+    {
+        "text": "Other",
+        "span": "(21)"
+    },
+];
+
+const usedVehicle = [
+    {
+        "text": "Single Owner Cars",
+        "span": "(446453)"
+    },
+];
+
+const preOwnder = [
+    {
+        "text": "CPO",
+        "span": "(312231)"
+    },
+]
+
+const fuelType = [
+    {
+        "text": "Gasoline",
+        "span": "(3118)"
+    },
+    {
+        "text": "Hybrid",
+        "span": "(661312)"
+    },
+    {
+        "text": "Diesel",
+        "span": "(66311)"
+    },
+    {
+        "text": "Electric",
+        "span": "(4588)"
+    },
+    {
+        "text": "Alternative",
+        "span": "(13)"
+    },
+    {
+        "text": "Other",
+        "span": "(4234)"
+    }
+];
+
+const buyHome = [
+    {
+        "text": "Buy From Home",
+        "span": "(311784)"
+    },
 ]
 
 var usedMake = document.querySelector("#used_make");
@@ -315,3 +483,11 @@ function pushLabel(dest, source) {
 pushLabel(document.querySelector(".feature-list"), usedFeature);
 pushLabel(document.querySelector(".price-rating-list"), usedPriceRating);
 pushLabel(document.querySelector(".color-list"), usedColor);
+pushLabel(document.querySelector(".body-style-list"), usedBody);
+pushLabel(document.querySelector(".drive-train-list"), driveTrain);
+pushLabel(document.querySelector(".engine-list"), usedEngine);
+pushLabel(document.querySelector(".transmission-list"), transMission);
+pushLabel(document.querySelector(".vehicle-history-list"), usedVehicle);
+pushLabel(document.querySelector(".certified-list"), preOwnder);
+pushLabel(document.querySelector(".fuel-type-list"), fuelType);
+pushLabel(document.querySelector(".buy-home-list"), buyHome);

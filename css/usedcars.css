@@ -111,6 +111,10 @@
   font-size: 1.4rem;
   font-weight: 700;
 }
+.used-sel-item-heading .used-select-item-header i {
+  font-size: 1.4rem;
+  color: #757373;
+}
 .used-sel-item-heading span i {
   font-size: 2.2rem;
   color: #757373;
@@ -304,6 +308,163 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
   margin: 0 4px;
   background-color: red;
+}
+
+.used-main-header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.used-main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.used-main-content-item {
+  color: black;
+  transition: color 0.3s;
+  box-shadow: 0 0 2px #757373;
+}
+.used-main-content-item:hover {
+  color: #525151;
+}
+
+.used-item-header {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  padding: 8px;
+  position: relative;
+}
+.used-item-header .header-classify {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 3px 10px;
+  background-color: #112dca;
+}
+.used-item-header .header-photos {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: rgba(34, 33, 33, 0.7);
+  padding: 5px 10px;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+.used-item-header .header-photos i {
+  font-size: 1.2rem;
+}
+.used-item-header .header-photos:hover {
+  transform: scale(1.1);
+}
+
+.used-item-content {
+  background-color: #ffffff;
+  padding: 8px;
+}
+.used-item-content .used-item-content-header {
+  display: flex;
+  justify-content: space-between;
+}
+.used-item-content .used-item-content-header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.used-item-content .used-item-content-more {
+  display: flex;
+  justify-content: space-between;
+}
+.used-item-content .used-item-content-more p {
+  font-size: 1.1rem;
+}
+.used-item-content .used-item-content-list {
+  min-height: 80px;
+}
+.used-item-content .used-item-content-list .used-content-list-item {
+  font-size: 1.3rem;
+  padding: 4px 0;
+}
+.used-item-content .used-item-content-list .used-content-list-item i {
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+.used-item-content button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #c21919;
+  font-size: 1.4rem;
+  font-weight: 600;
+  box-shadow: #a61c1e 0px -3px 0px inset;
+}
+
+.movePage {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.movePage button {
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  box-shadow: #b1aeae 0px -3px 0px inset;
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+  color: #535151;
+  font-weight: 600;
+  background-color: #e5e2e2;
+  cursor: pointer;
+}
+.movePage button i {
+  font-size: 1.3rem;
+}
+.movePage .previousBtn i {
+  margin-right: 5px;
+}
+.movePage .nextBtn i {
+  margin-left: 5px;
+}
+.movePage p {
+  align-self: center;
+  font-size: 1.4rem;
+}
+
+.used-main-text {
+  margin: 20px 0;
+}
+.used-main-text p {
+  padding: 8px 0;
+  font-size: 1.2rem;
+  color: #838383;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.used-main-search .used-main-list-header {
+  font-weight: 600;
+}
+
+.used-main-search-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.used-main-search-list .used-main-list-item {
+  padding: 5px 0;
+}
+.used-main-search-list .used-main-list-item a {
+  color: black;
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 1440px) {

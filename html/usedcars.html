@@ -9,7 +9,7 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/usedcars.css">
 </head>
@@ -199,16 +199,18 @@
                         <div class="used-select__side-list">
                             <form action="">
                                 <div class="form-check align-items-center">
-                                  <label class="form-check-label" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>NEW
-                                  </label>
+                                    <label class="form-check-label" for="check1">
+                                        <input type="checkbox" class="form-check-input" id="check1" name="option1"
+                                            value="something" checked>NEW
+                                    </label>
                                 </div>
                                 <div class="form-check">
-                                  <label class="form-check-label" for="check2">
-                                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">USED
-                                  </label>
+                                    <label class="form-check-label" for="check2">
+                                        <input type="checkbox" class="form-check-input" id="check2" name="option2"
+                                            value="something">USED
+                                    </label>
                                 </div>
-                              </form>
+                            </form>
                         </div>
                     </div>
                     <div class="used-select-side-header">
@@ -292,7 +294,7 @@
                             <div class="multi-range-slider">
                                 <input type="range" id="input-left" min="0" max="100" value="0">
                                 <input type="range" id="input-right" min="0" max="100" value="100">
-                        
+
                                 <div class="slider">
                                     <div class="track"></div>
                                     <div class="range"></div>
@@ -310,7 +312,7 @@
                         </div>
                         <div class="used-select__side-list price-rating-list">
                             <!-- <div class="used__side-item"> -->
-                                <!-- <label for="check1" class="used__side-item-label">
+                            <!-- <label for="check1" class="used__side-item-label">
                                     <input type="checkbox" id="check1" name="check1">
                                     <p>NEW fasdfsdaf sdafdsa</p>
                                     <span>(43241412)</span>
@@ -333,7 +335,7 @@
                             <div class="multi-range-slider">
                                 <input type="range" id="input-left" min="0" max="100" value="0">
                                 <input type="range" id="input-right" min="0" max="100" value="100">
-                        
+
                                 <div class="slider">
                                     <div class="track"></div>
                                     <div class="range"></div>
@@ -370,6 +372,163 @@
                         </div>
                     </div>
 
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">BODY STYLE</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list body-style-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">DRIVETRAIN</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list drive-train-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">ENGINE</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list engine-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">TRANSMISSION</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list transmission-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">VEHICLE HISTORY</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list vehicle-history-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">CERTIFIED PRE-OWNED</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list certified-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">FUEL TYPE</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list fuel-type-list">
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">BUY FROM HOME <i class="far fa-question-circle"></i>
+                            </h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list buy-home-list">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-10 used-car-main">
+                    <div class="used-main-header">
+                        973.805 Results
+                    </div>
+                    <div class="used-main-content">
+                        <a href="" class="used-main-content-item">
+                            <div class="used-item-header"
+                                style="background-image: url(../resources/img/used-cars-img/5CBDFBTDIVE3XJSX3XXONI6X6E-cr-540.jpg);">
+                                <div class="header-classify">New Listing</div>
+                                <div class="header-photos"><i class="far fa-image"></i> 20 Photos</div>
+                            </div>
+                            <div class="used-item-content">
+                                <div class="used-item-content-header">
+                                    <h1 class="header-name-car">2021 Chevrolet Spark LS</h1>
+                                    <h1 class="header-price-car">$11.889</h1>
+                                </div>
+                                <div class="used-item-content-more">
+                                    <p class="used-more-pos">Orlando, FL</p>
+                                    <p class="used-more-price">#241/month est.*</p>
+                                </div>
+                                <div class="used-item-content-list">
+                                    <div class="used-content-list-item">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        Mileage: 760
+                                    </div>
+                                    <div class="used-content-list-item">
+                                        <i class="fas fa-poll-h"></i>
+                                        Free CARFAX Report: 1-Owner
+                                    </div>
+                                    <div class="used-content-list-item">
+                                        <i class="fas fa-home"></i>
+                                        Buy From Home
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger text-white">Check Availability</button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="movePage">
+                        <button class="previousBtn"><i class="fas fa-arrow-left"></i>Previous</button>
+                        <p>1 of 500</p>
+                        <button class="nextBtn">Next<i class="fas fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="used-main-text">
+                        <p>The vehicle information provided here is supplied by the seller or other third parties. U.S.
+                            News & World Report is not responsible for the accuracy of such information and provides
+                            this service without representations or warranties of any kind, either expressed or implied.
+                        </p>
+                        <p>*Estimated monthly payment has been calculated for 60 months loan term with 6% APR, 5% Sales
+                            Tax, 0$ down payment and 0$ trade-in value. The monthly payment is a rough estimate provided
+                            solely for informational purposes. You should not take action based on the information
+                            provided. When available, we recommend you use interest rate information provided to you by
+                            your dealer or lender.</p>
+                    </div>
+
+                    <div class="used-main-search">
+                        <h2 class="used-main-list-header">Search Top Models </h2>
+                        <ul class="used-main-search-list">
+                            <li class="used-main-list-item"> <a href="">Used Dodge Challenger For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Honda Pilot For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Dodge Charger For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Subaru Forester For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Jeep Grand Cherokee For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Subaru Outback For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Ford Escape For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota Camry For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Ford Explorer For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota Corolla For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Ford F-150 For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota Highlander For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Honda Accord For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota RAV4 For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Honda Civic For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota Tacoma For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Honda CR-V For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota Tundra For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Ford F-150 For Sale</a> </li>
+                            <li class="used-main-list-item"> <a href="">Used Toyota Camry For Sale</a> </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -421,7 +580,8 @@
                 <a href="" class="footer__col_header">How we rank</a>
                 <div class="footer__list-col">
                     <a href="" class="footer_list_link">New Car</a>
-                    <a href="" class="footer_list_link">Used Car</a> </div>
+                    <a href="" class="footer_list_link">Used Car</a>
+                </div>
             </div>
             <div class="footer__list-item">
                 <a href="" class="footer__col_header">cars for sale </a>
