@@ -112,16 +112,16 @@
         </div>
     </header>
 
-    <div class="link container">
+    <div class="link container used-car-container">
         <a href="../vendors/index.html" class="first__link">Cars</a>
     </div>
 
-    <div class="introduce container">
+    <div class="introduce container used-car-container">
         <h1 class="introduce__header">Used Cars for Sale</h1>
         <p class="introduce__text">Nationwide</p>
     </div>
 
-    <div class="container find-cars">
+    <div class="container find-cars used-car-container">
         <div class="row">
             <div class="col-md-2 find-cars-text align-items-center d-flex">
                 Find Cars Near You
@@ -154,19 +154,19 @@
     </div>
 
     <div class="content-page">
-        <div class="container">
+        <div class="container used-car-container">
             <div class="row">
-                <div class="col-lg-2 d-none d-lg-block select-side">
-                    <div class="select-side-header">
+                <div class="col-lg-2 d-none d-lg-block used-select-side">
+                    <div class="used-select-side-header">
                         Show Results For
                     </div>
-                    <div class="select-side-item">
-                        <div class="select-item-heading">
-                            <h2 class="select-item-header">LOCATION </h2>
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">LOCATION </h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <div class="select__side-list">
-                            <input type="text" class="select__side-list-input" placeholder="ZIP">
+                        <div class="used-select__side-list">
+                            <input type="text" class="used-select__side-list-input" placeholder="ZIP">
                             <select name="" id="">
                                 <option class="select__side-option">within 10 miles</option>
                                 <option class="select__side-option">within 25 miles</option>
@@ -177,26 +177,26 @@
                             </select>
                         </div>
                     </div>
-                    <div class="select-side-item">
-                        <div class="select-item-heading">
-                            <h2 class="select-item-header">MAKE/MODEL</h2>
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">MAKE/MODEL</h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <div class="select__side-list">
-                            <select name="make" id="make1">
+                        <div class="used-select__side-list">
+                            <select name="make" id="used_make">
                                 <option value="All Makes">All Makes</option>
                             </select>
-                            <select name="model" id="model1">
+                            <select name="model" id="used_model">
                                 <option value="All Models">All Models</option>
                             </select>
                         </div>
                     </div>
-                    <div class="select-side-item">
-                        <div class="select-item-heading">
-                            <h2 class="select-item-header">CONDITION</h2>
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">CONDITION</h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <div class="select__side-list">
+                        <div class="used-select__side-list">
                             <form action="">
                                 <div class="form-check align-items-center">
                                   <label class="form-check-label" for="check1">
@@ -211,15 +211,43 @@
                               </form>
                         </div>
                     </div>
-                    <div class="select-side-header">
+                    <div class="used-select-side-header">
                         Filter by
                     </div>
-                    <div class="select-side-item">
-                        <div class="select-item-heading">
-                            <h2 class="select-item-header">YEAR</h2>
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">YEAR</h2>
                             <span><i class="fas fa-angle-up"></i></span>
                         </div>
-                        <div class="select-side-list">
+                        <div class="used-select-side-list year-select">
+                            <select name="" id="" class="year">
+                                <option value="">Any</option>
+                                <option value="">2021</option>
+                                <option value="">2020</option>
+                                <option value="">2019</option>
+                                <option value="">2018</option>
+                                <option value="">2017</option>
+                                <option value="">2016</option>
+                                <option value="">2015</option>
+                                <option value="">2014</option>
+                                <option value="">2013</option>
+                                <option value="">2012</option>
+                                <option value="">2011</option>
+                                <option value="">2010</option>
+                                <option value="">2009</option>
+                                <option value="">2008</option>
+                                <option value="">2007</option>
+                                <option value="">2006</option>
+                                <option value="">2005</option>
+                                <option value="">2004</option>
+                                <option value="">2003</option>
+                                <option value="">2002</option>
+                                <option value="">2001</option>
+                                <option value="">2000</option>
+                                <option value="">1999</option>
+                                <option value="">1998</option>
+                            </select>
+                            <p> to </p>
                             <select name="" id="" class="year">
                                 <option value="">Any</option>
                                 <option value="">2021</option>
@@ -249,6 +277,99 @@
                             </select>
                         </div>
                     </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">PRICE</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list">
+                            <div class="price-text">
+                                <span class="low-price">$0</span>
+                                -
+                                <span class="high-price">%100.000+</span>
+                            </div>
+                            <div class="multi-range-slider">
+                                <input type="range" id="input-left" min="0" max="100" value="0">
+                                <input type="range" id="input-right" min="0" max="100" value="100">
+                        
+                                <div class="slider">
+                                    <div class="track"></div>
+                                    <div class="range"></div>
+                                    <div class="thumb left"></div>
+                                    <div class="thumb right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">PRICE RATING</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list price-rating-list">
+                            <!-- <div class="used__side-item"> -->
+                                <!-- <label for="check1" class="used__side-item-label">
+                                    <input type="checkbox" id="check1" name="check1">
+                                    <p>NEW fasdfsdaf sdafdsa</p>
+                                    <span>(43241412)</span>
+                                  </label> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">MILEAGE</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list">
+                            <div class="price-text">
+                                <span class="low-price">$0</span>
+                                -
+                                <span class="high-price">%150.000+</span>
+                            </div>
+                            <div class="multi-range-slider">
+                                <input type="range" id="input-left" min="0" max="100" value="0">
+                                <input type="range" id="input-right" min="0" max="100" value="100">
+                        
+                                <div class="slider">
+                                    <div class="track"></div>
+                                    <div class="range"></div>
+                                    <div class="thumb left"></div>
+                                    <div class="thumb right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">COLOR</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list color-list">
+                            <!-- <div class="used__side-item">
+                                <label for="check1" class="used__side-item-label used__side-color-item">
+                                    <input type="checkbox" id="check1" name="check1">
+                                    <div class="label-color"></div>
+                                    <p>Burgundy/ xMaroon</p>
+                                    <span>(43241412)</span>
+                                  </label> 
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="used-select-side-item">
+                        <div class="used-sel-item-heading">
+                            <h2 class="used-select-item-header">FEATURES</h2>
+                            <span><i class="fas fa-angle-up"></i></span>
+                        </div>
+                        <div class="used-select__side-list feature-list">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
