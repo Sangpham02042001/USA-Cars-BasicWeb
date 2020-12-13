@@ -376,6 +376,410 @@ const buyHome = [
     },
 ]
 
+const linkImg = "url(../resources/img/used-cars-img/";
+
+const usedFontArr = ["fas fa-tachometer-alt", "fas fa-poll-h", "fas fa-home"];
+
+const usedMainContent = [
+    {
+        img: "5CBDFBTDIVE3XJSX3XXONI6X6E-cr-540.jpg",
+        classify: "New Listing",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$11.889",
+        position: "Orlando, FL",
+        morePrice: "241/month est.*",
+        rating: "Excellent Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 3.554", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "FR32DVD3AQAOHCLMVAIRZ6UIWM-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$13.995",
+        position: "El Pasco, TX",
+        morePrice: "284/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 455",],
+    },
+    {
+        img: "GO4U2FUUKGRNBZMCIQBBNA6QCA-cr-1400.jpg",
+        classify: "Price Reduced",
+        photos: "24 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$14.000",
+        position: "Grapevine, TX",
+        morePrice: "284/month est.*",
+        rating: "High Price",
+        list: ["Mileage: 550", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "4ZWY2QXQA6QC66XUYCVRG2PEWQ-600.jpg",
+        classify: "Price Reduced",
+        photos: "27 photos",
+        nameCar: "2021 Huyndai Accent SE",
+        priceCar: "$15.325",
+        position: "Temple Hills, MD",
+        morePrice: "311/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 1.298",],
+    },
+    {
+        img: "ZIABN42BQNSAKV4C35JPWUGXUQ-cr-1400.jpg",
+        classify: "Price Reduced",
+        photos: "27 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$15.996",
+        position: "Matteson, IL",
+        morePrice: "325/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 1.895", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "RIZCWMKMLURLLV2NVTTEBAYDNM-cr-540.jpg",
+        classify: "New Listing",
+        photos: "6 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$15.998",
+        position: "Springfield, GA",
+        morePrice: "325/month est.*",
+        rating: "High Price",
+        list: ["Mileage: 4.623",],
+    },
+    {
+        img: "5M2OEUW5ATYLHJVOI7X37BC27A-600.jpg",
+        classify: "Price Reduced",
+        photos: "17 photos",
+        nameCar: "2021 Kia Forte LXS",
+        priceCar: "$16.300",
+        position: "Kenner, LA",
+        morePrice: "331/month est.*",
+        rating: "Excellent Deal",
+        list: ["Mileage: 430", "Free CARFAX Report: 1-Owner"],
+    },
+    {
+        img: "J3RDNO4XHCWG3PHO2CWLMXBLLY-600.jpg",
+        classify: "Price Reduced",
+        photos: "40 photos",
+        nameCar: "2021 Kia Soul LX",
+        priceCar: "$16.300",
+        position: "Rainbow City, AL",
+        morePrice: "331/month est.*",
+        rating: "Excellent Deal",
+        list: ["Mileage: 6.278"],
+    },
+    {
+        img: "FI36PNT4N7ITJQK22VHTK3CJU4-600.jpg",
+        classify: "Price Reduced",
+        photos: "3 photos",
+        nameCar: "2021 Kia Soul S",
+        priceCar: "$16.498",
+        position: "Kennesaw, GA",
+        morePrice: "335/month est.*",
+        rating: "Excellent Deal",
+        list: ["Mileage: 5.239", "Free CARFAX Report: 1-Owner"],
+    },
+    {
+        img: "JUMBRGN55UHXNCEJS622WTX7KM-600.jpg",
+        classify: "Price Reduced",
+        photos: "5 photos",
+        nameCar: "2021 Toyota Corolla LE",
+        priceCar: "$16.499",
+        position: "Orlando, FL",
+        morePrice: "335/month est.*",
+        rating: "Great Deal",
+        list: ["Mileage: 4.397", "Free CARFAX Report: 1-Owner"],
+    },
+    {
+        img: "GWQUYTD46S6V4R7V3F4DYXNIXE-cr-860.jpg",
+        classify: "Price Reduced",
+        photos: "1 photos",
+        nameCar: "2021 Toyota Corolla LE",
+        priceCar: "$16.500",
+        position: "Boerne, TX",
+        morePrice: "335/month est.*",
+        rating: "Excellent Deal",
+        list: ["Mileage: 17.713", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "TUCTNRVBZRFERRNCTXN7U7FJ4I-600.jpg",
+        classify: "Price Reduced",
+        photos: "16 photos",
+        nameCar: "2021 Kia Soul LX",
+        priceCar: "$16.941",
+        position: "New Port Richey, Fl",
+        morePrice: "344/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 475", "Free CARFAX Report: 1-Owner"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "WD3BN72MQWTS6LALPBISDZS2YI-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "New Listing",
+        photos: "42 photos",
+        nameCar: "2021 Kia Forte LXS",
+        priceCar: "$16.998",
+        position: "Selma, NC",
+        morePrice: "345/month est.*",
+        rating: "Great Deal",
+        list: ["Mileage: 3.914", "Free CARFAX Report: 1-Owner",],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+    {
+        img: "CWX44C642JJNBSOSQRIPKCLM2Q-cr-540.jpg",
+        classify: "Price Reduced",
+        photos: "20 photos",
+        nameCar: "2021 Chevrolet Spark LS",
+        priceCar: "$12.596",
+        position: "Wendell, NC",
+        morePrice: "256/month est.*",
+        rating: "Good Deal",
+        list: ["Mileage: 760", "Free CARFAX Report: 1-Owner", "Buy From Home"],
+    },
+
+]
+
 var usedMake = document.querySelector("#used_make");
 var usedModel = document.querySelector("#used_model");
 
@@ -491,3 +895,88 @@ pushLabel(document.querySelector(".vehicle-history-list"), usedVehicle);
 pushLabel(document.querySelector(".certified-list"), preOwnder);
 pushLabel(document.querySelector(".fuel-type-list"), fuelType);
 pushLabel(document.querySelector(".buy-home-list"), buyHome);
+
+for (let i = 0; i < usedMainContent.length; i++) {
+    let a = document.createElement("a");
+    a.setAttribute("href", "#");
+    a.setAttribute("class", "used-main-content-item");
+
+    let headerDiv = document.createElement("div");
+    headerDiv.setAttribute("class", "used-item-header");
+    headerDiv.style.backgroundImage = linkImg + usedMainContent[i]["img"] + ")";
+    let headerClassify = document.createElement("div");
+    headerClassify.setAttribute("class", 'header-classify');
+    let text1 = document.createTextNode(usedMainContent[i]["classify"]);
+    headerClassify.appendChild(text1);
+    headerDiv.appendChild(headerClassify);
+    let headerPhoto = document.createElement("div");
+    headerPhoto.setAttribute('class', "header-photos");
+    let fontImg = document.createElement("i");
+    fontImg.setAttribute("class", "far fa-image");
+    headerPhoto.appendChild(fontImg);
+    let text2 = document.createTextNode(usedMainContent[i]["photos"]);
+    headerPhoto.appendChild(text2);
+    headerDiv.appendChild(headerPhoto);
+    a.appendChild(headerDiv);
+
+    let itemContent = document.createElement("div");
+    itemContent.setAttribute("class", "used-item-content");
+    let itemHeader = document.createElement("div");
+    itemHeader.setAttribute("class", "used-item-content-header");
+    let namecar = document.createElement("h1");
+    namecar.setAttribute("class", "header-name-car");
+    namecar.textContent = usedMainContent[i]["nameCar"];
+    let pricecar = document.createElement("h1");
+    pricecar.setAttribute("class", "header-price-car");
+    pricecar.textContent = usedMainContent[i]["priceCar"];
+    itemHeader.appendChild(namecar);
+    itemHeader.appendChild(pricecar);
+    itemContent.appendChild(itemHeader);
+
+    let itemMore = document.createElement("div");
+    itemMore.setAttribute("class", "used-item-content-more");
+    let p1 = document.createElement("p");
+    p1.textContent = usedMainContent[i]["position"];
+    p1.setAttribute("class", "used-more-pos");
+    itemMore.appendChild(p1);
+    let p2 = document.createElement("p");
+    p2.textContent = usedMainContent[i]["morePrice"];
+    p2.setAttribute("class", "used-more-price");
+    itemMore.appendChild(p2);
+    itemContent.appendChild(itemMore);
+
+    let itemList = document.createElement("div");
+    itemList.setAttribute("class", "used-item-content-list");
+    for (let j = 0; j < usedMainContent[i]["list"].length; j++) {
+        let item = document.createElement("div");
+        item.setAttribute("class", "used-content-list-item");
+        let text2 = document.createTextNode(usedMainContent[i]["list"][j]);
+        let icon = document.createElement("i");
+        icon.setAttribute("class", usedFontArr[j]);
+        item.appendChild(icon);
+        item.appendChild(text2);
+
+        itemList.appendChild(item);
+    }
+    itemContent.appendChild(itemList);
+
+    const button = document.createElement("button");
+    button.setAttribute("class", "btn btn-danger text-white");
+    button.textContent = "Check Availability";
+    itemContent.appendChild(button);
+
+    a.appendChild(itemContent);
+    document.querySelector(".used-main-content").appendChild(a);
+}
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 600) {
+        // $("#backToTop").css("display", "block");
+        $("#backToTop").fadeIn(1000);
+    } else {
+        // $("#backToTop").hide(1000);
+        // $("#backToTop").css("display", "none");
+        $("#backToTop").fadeOut(1000);
+    }
+})

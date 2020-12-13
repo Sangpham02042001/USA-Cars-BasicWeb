@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .first__link {
   color: #666666;
   font-size: 1.2rem;
@@ -7,6 +11,16 @@
   color: black;
 }
 
+@keyframes zoom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .link {
   height: 60px;
   padding-top: 20px;
@@ -29,19 +43,24 @@
 .find-cars {
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
 }
 
 .find-cars-text {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  margin-bottom: 10px;
 }
 
 .find-cars-input {
-  padding: 8px !important;
+  max-width: 160px;
+  padding: 8px;
   font-size: 1.4rem;
 }
 
 .find-cars-btn {
-  width: 100%;
   border-radius: 0 5px 5px 0;
   font-size: 1.4rem;
   display: flex;
@@ -68,7 +87,10 @@
 .sort-label {
   font-size: 1.2rem;
   font-weight: 800;
-  width: 20%;
+  display: flex;
+  align-self: center;
+  margin-bottom: 0;
+  width: 70px;
 }
 
 #sort {
@@ -361,6 +383,7 @@ input[type=range]::-webkit-slider-thumb {
   font-weight: 600;
 }
 .used-item-header .header-photos i {
+  margin-right: 5px;
   font-size: 1.2rem;
 }
 .used-item-header .header-photos:hover {
@@ -450,6 +473,9 @@ input[type=range]::-webkit-slider-thumb {
   margin-bottom: 0;
 }
 
+.used-main-search {
+  margin-top: 20px;
+}
 .used-main-search .used-main-list-header {
   font-weight: 600;
 }
@@ -464,12 +490,104 @@ input[type=range]::-webkit-slider-thumb {
 }
 .used-main-search-list .used-main-list-item a {
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+}
+
+#backToTop {
+  display: flex;
+  position: fixed;
+  right: 5%;
+  bottom: 30%;
+  color: #757373;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+  transform-origin: center;
+  box-shadow: rgba(17, 17, 17, 0.3) 0px 0px 5px;
+}
+#backToTop i {
+  font-size: 1.8rem;
+}
+#backToTop:hover {
+  box-shadow: rgba(24, 23, 23, 0.3) 0px 0px 8px;
 }
 
 @media only screen and (max-width: 1440px) {
   .header .header__list {
     display: none;
+  }
+}
+@media only screen and (max-width: 1264px) {
+  .used-car-container {
+    max-width: 96%;
+    padding: auto 10px;
+  }
+
+  .used-main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1036px) {
+  .used__side-item-label span {
+    position: relative;
+    left: 8px;
+  }
+
+  .introduce__header {
+    font-size: 2.4rem;
+  }
+
+  .introduce__text {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 976px) {
+  .sort {
+    padding-left: 14px;
+  }
+
+  .sort__cars {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .find-cars-text {
+    font-size: 1.6rem;
+  }
+
+  .find-cars-input {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .used-main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .used-main-search-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 494px) {
+  .find-cars {
+    flex-direction: column;
+  }
+
+  .movePage button {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .used-main-search .used-main-list-header {
+    font-size: 1.6rem;
+  }
+
+  .used-main-search-list .used-main-list-item a {
+    font-size: 1.3rem;
   }
 }
 
