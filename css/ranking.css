@@ -52,6 +52,11 @@
   color: #525151;
 }
 
+.ranking-navbar {
+  align-items: center;
+  display: flex;
+}
+
 .container-fluid {
   border: 1px solid #706e6e;
   box-shadow: rgba(17, 17, 17, 0.2) 0px 2px 2px;
@@ -178,52 +183,47 @@
   font-weight: 600;
 }
 
-.browse__side {
+.car-ranking-main-content .browse__side {
   padding: 20px;
   border: 1px solid #d3d0d0;
-  height: 400px;
+  height: 380px;
   background-color: white;
+  margin-bottom: 20px;
 }
-
-.browse__side-header {
+.car-ranking-main-content .browse__side-header {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
-
-.browse__side-list {
+.car-ranking-main-content .browse__side-list {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 10px;
 }
-
-.browse__side-item {
+.car-ranking-main-content .browse__side-item {
   color: black;
   transition: color 0.4s;
   text-align: center;
 }
-.browse__side-item:hover {
+.car-ranking-main-content .browse__side-item:hover {
   color: #858181;
 }
-
-.browse-item-img {
+.car-ranking-main-content .browse-item-img {
   height: 40px;
   max-width: 130px;
 }
-
-.browse-item-text {
+.car-ranking-main-content .browse-item-text {
   padding: 5px 0;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
-.browse__side-footer {
+.car-ranking-main-content .browse__side-footer {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-.browse__side-footer span {
+.car-ranking-main-content .browse__side-footer span {
   font-size: 1.4rem;
   position: relative;
   top: -1px;
@@ -265,22 +265,15 @@
     font-size: 2rem;
   }
 
-  .car-list-img {
-    min-width: 60%;
-    width: 70%;
-    margin-left: 0;
-    flex-wrap: wrap;
-  }
   .car-list-img .car-link-img img {
     width: 80px;
   }
-}
-@media only screen and (max-width: 992px) {
+
   .car-ranking-list {
     padding: 0;
   }
   .car-ranking-list .car-ranking-item a {
-    font-size: 1.2rem;
+    margin-right: 14px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -294,10 +287,41 @@
   .ranking-content-item ul li a {
     font-size: 1.4rem;
   }
+
+  .car-ranking-list {
+    flex-direction: column;
+  }
+
+  .how-rank {
+    margin-bottom: 0;
+  }
+  .how-rank a {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  .car-list-img {
+    min-width: 6 0%;
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .sticky {
+    position: relative;
+  }
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 576px) {
   .ranking-content-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .car-ranking-main-content .browse__side {
+    height: 520px;
+  }
+  .car-ranking-main-content .browse__side .browse__side-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
