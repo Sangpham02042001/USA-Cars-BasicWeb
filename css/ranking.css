@@ -1,0 +1,158 @@
+.car-ranking-container {
+  padding: 0;
+}
+
+.breadcrumb {
+  background-color: #ffffff;
+  padding: 20px 0;
+  font-size: 2rem;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #525252;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ranking-header h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.ranking-header p {
+  font-size: 1.8rem;
+}
+
+.how-rank {
+  padding: 10px 0;
+}
+.how-rank a {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.how-rank a:hover {
+  color: #525151;
+}
+
+.container-fluid {
+  border: 1px solid #706e6e;
+  box-shadow: rgba(17, 17, 17, 0.2) 0px 2px 2px;
+}
+
+.car-ranking-list {
+  display: flex;
+  align-items: center;
+}
+.car-ranking-list .car-ranking-item a {
+  display: block;
+  padding: 15px 0;
+  font-size: 1.4rem;
+  color: #000000;
+  margin-right: 40px;
+}
+.car-ranking-list .car-ranking-item a:hover {
+  color: #525151;
+}
+.car-ranking-list .car-ranking-item a:first-child {
+  padding-left: 0;
+}
+.car-ranking-list .car-ranking-item a.active {
+  border-bottom: 3px solid #c4212a;
+  font-weight: 600;
+  cursor: default;
+  color: #000000;
+}
+
+.car-list-img {
+  display: flex;
+  padding: 25px 0;
+}
+.car-list-img .car-link-img {
+  color: black;
+  display: block;
+  text-align: center;
+  border: 1px solid #cccccc;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #cccccc;
+  padding: 10px 10px 5px 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.car-list-img .car-link-img p {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+.car-list-img .car-link-img img {
+  width: 120px;
+}
+.car-list-img .car-link-img.active {
+  cursor: default;
+  border-bottom: 3px solid #c4212a;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.car-list-img .car-link-img.active p {
+  font-weight: 600;
+}
+
+.ranking-content-header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  margin-bottom: 15px;
+}
+.ranking-content-header::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 60px;
+  background-color: #c4212a;
+  top: 0;
+  left: 0;
+}
+
+.ranking-content-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+}
+
+.ranking-content-item {
+  margin-bottom: 20px;
+}
+.ranking-content-item .raking-item-header {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.ranking-content-item a {
+  transition: color 0.3s;
+  color: black;
+}
+.ranking-content-item a:hover {
+  color: #706e6e;
+}
+.ranking-content-item ul li {
+  padding: 6px 0;
+}
+.ranking-content-item ul li a {
+  font-size: 1.6rem;
+}
+.ranking-content-item ul li a span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-right: 5px;
+}
+.ranking-content-item a.see-full-ranking {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=ranking.css.map */
