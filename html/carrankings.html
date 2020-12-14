@@ -128,7 +128,7 @@
         <a href="">read how we rank new cars <span></span>»</span></a>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid ranking-navbar">
         <ul class="car-ranking-list car-ranking-container container list-unstyled">
             <li class="car-ranking-item active"> <a href="" class="active">New Car Rankings</a> </li>
             <li class="car-ranking-item"> <a href="">Used Car Rankings</a> </li>
@@ -139,23 +139,23 @@
     </div>
 
     <div class="container car-ranking-container car-list-img">
-        <button class="car-link-img active">
+        <button class="car-link-img active" onclick="openCar(event, 'cars')" id="defaultOpen">
             <img src="../resources/img/Jellybeans-SmallCars.jpg" alt="">
             <p>Cars</p>
         </button>
-        <button class="car-link-img">
+        <button class="car-link-img" onclick="openCar(event, 'SUVs')">
             <img src="../resources/img/Jellybeans-SUVs.jpg" alt="">
-            <p>SUVS</p>
+            <p>SUVs</p>
         </button>
-        <button class="car-link-img">
+        <button class="car-link-img" onclick="openCar(event, 'Trucks')">
             <img src="../resources/img/Jellybeans-Trucks.jpg" alt="">
             <p>Trucks</p>
         </button>
-        <button class="car-link-img">
+        <button class="car-link-img" onclick="openCar(event, 'Vans')">
             <img src="../resources/img/Jellybeans-Vans.jpg" alt="">
             <p>Vans</p>
         </button>
-        <button class="car-link-img">
+        <button class="car-link-img" onclick="openCar(event, 'Hybrids')">
             <img src="../resources/img/Jellybeans-Hybrids.jpg" alt="">
             <p>Hybrids</p>
         </button>
@@ -163,7 +163,7 @@
 
     <div class="car-ranking-main-content container car-ranking-container">
         <div class="row">
-            <div class="col-8 ranking-content-left">
+            <div class="col-lg-8 col-md-7 ranking-content-left" id="cars">
                 <div class="nothing_name">
                     <div class="ranking-content-header">
                         SMALL CARS
@@ -549,7 +549,1586 @@
                 </div>
                 
             </div>
-            <div class="col-4"></div>
+
+            <div class="col-lg-8 col-md-7 ranking-content-left" id="SUVs">
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        COMPACT SUVs
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Compact SUvs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda CR-V </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada CX-5 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Kia Sportage </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Compact SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 BMW X3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Audi Q5 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Lincoln Corsair </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Subcompact SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2021 Huyndai Kona </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada CX-30 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Kia Soul </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Subcompact SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 BMW X1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Audi Q3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Volvo XC40 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        MIDSIZE SUVs
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Midsize SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Huyndai Santa FE </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Kia Telluride </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Huyndai Palisade </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Midsize SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Mercedes-Benz GLE-Class</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 BMW X5 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Lexus RX 350</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        LARGE SUVs
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Large SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Expedition </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Chevrolet Tahoe </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Suburban </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Large SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2021 Lincoln Navigator </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mercedes-Benz G-Class </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Cadilalc Escalade</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        HYBRID SUVS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hybrid and electric SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Toyota Highlander Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Ford Escape Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Toyota RAV4 Hybrid </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Hybrid and Electric SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Tesla Model X </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Audi e-tron </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Jaguar I-Pace</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        CROSSOVER SUVS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Crossover SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda CR-V </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Huyndai Santa Fe </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Mazda CX-5 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Crossover SUVs
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Merceds-Benz GLE-Class </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 BMW X3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 BMW X1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        2-ROW AND 3-ROW SUVS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                SUVS with 2 Rows
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2021 Honda CR-V </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Huyndai Santa Fe </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Mazda CX-5 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                SUVS with 3 Rows
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2021 Ford Expedition </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Kia Telluride </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Tahoe </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury SUVS with 2 Rows
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2021 BMW X3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 BMW X-1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Audi Q3 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury SUVS with 3 Rows
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2021 Merceds-Benz-S-Class</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Lincoln Navigator </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Tesla Model X </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-8 col-md-7 ranking-content-left" id="Trucks">
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        SMALL CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Small Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Civic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Small Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Genesis G70 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Audi A5 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 BMW 2-Series </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hatchbacks
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Civic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Compact Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Mazda Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Honda Civic </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Volkswagen GTI </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Subcompact Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Kia Rio </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Sonic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        MIDSIZE CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Midsize Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Accord </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Camry </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Huyndai Sonata </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Midsize Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 BMW 5-Series </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Genesis G80 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Audi A6</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        LARGE CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Large Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Kia Cadenza </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Avalon </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Impala </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Large Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Audi A7 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Genesis G90 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Kia K900</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Super Luxury Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Merceds-Benz-S-Class </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche Panamera </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Audi A8</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        SPORTS CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Sports Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Mustang </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazda MX-5 Miata </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Dodge Challenger </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Sports Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Chervolet Corvette </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche 911 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Porsche Cayman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        CONVERTIBLES
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Convertibles
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Mustang </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazda MX-5 Miata </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 MINI Cooper </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Convertibles
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Chervolet Corvette </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche 911 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Porsche Boxster</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        WAGONS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Wagons
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 A4 Allroad </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 A6 Allroad </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Subaru Outback </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        HYBRID CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hybrid and Electric Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Huyndai Sonanra Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Camry Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Accord Hybrid </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Hybrid and Electric Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Tesla Model S </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Tesla Model 3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Polestar 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-8 col-md-7 ranking-content-left" id="Vans">
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        SMALL CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Small Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Civic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Small Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Genesis G70 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Audi A5 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 BMW 2-Series </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hatchbacks
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Civic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Compact Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Mazda Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Honda Civic </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Volkswagen GTI </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Subcompact Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Kia Rio </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Sonic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        MIDSIZE CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Midsize Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Accord </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Camry </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Huyndai Sonata </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Midsize Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 BMW 5-Series </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Genesis G80 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Audi A6</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        LARGE CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Large Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Kia Cadenza </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Avalon </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Impala </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Large Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Audi A7 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Genesis G90 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Kia K900</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Super Luxury Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Merceds-Benz-S-Class </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche Panamera </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Audi A8</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        SPORTS CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Sports Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Mustang </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazda MX-5 Miata </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Dodge Challenger </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Sports Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Chervolet Corvette </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche 911 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Porsche Cayman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        CONVERTIBLES
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Convertibles
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Mustang </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazda MX-5 Miata </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 MINI Cooper </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Convertibles
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Chervolet Corvette </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche 911 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Porsche Boxster</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        WAGONS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Wagons
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 A4 Allroad </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 A6 Allroad </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Subaru Outback </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        HYBRID CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hybrid and Electric Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Huyndai Sonanra Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Camry Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Accord Hybrid </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Hybrid and Electric Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Tesla Model S </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Tesla Model 3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Polestar 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-8 col-md-7 ranking-content-left" id="Hybrids">
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        SMALL CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Small Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Civic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Small Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Genesis G70 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Audi A5 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 BMW 2-Series </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hatchbacks
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazada Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Civic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Compact Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Mazda Mazda3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Honda Civic </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Volkswagen GTI </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Subcompact Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Fit </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Kia Rio </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Sonic </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        MIDSIZE CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Midsize Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Honda Accord </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Camry </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Huyndai Sonata </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Midsize Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 BMW 5-Series </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Genesis G80 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Audi A6</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        LARGE CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Large Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Kia Cadenza </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Avalon </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Chevrolet Impala </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Large Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Audi A7 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Genesis G90 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Kia K900</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Super Luxury Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Merceds-Benz-S-Class </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche Panamera </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Audi A8</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        SPORTS CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Sports Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Mustang </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazda MX-5 Miata </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Dodge Challenger </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Sports Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Chervolet Corvette </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche 911 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Porsche Cayman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        CONVERTIBLES
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Convertibles
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Ford Mustang </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Mazda MX-5 Miata </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 MINI Cooper </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Convertibles
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Chervolet Corvette </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Porsche 911 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Porsche Boxster</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        WAGONS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Wagons
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 A4 Allroad </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 A6 Allroad </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Subaru Outback </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nothing_name">
+                    <div class="ranking-content-header">
+                        HYBRID CARS
+                    </div>
+                    <div class="ranking-content-list">
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Hybrid and Electric Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Huyndai Sonanra Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Toyota Camry Hybrid </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2020 Honda Accord Hybrid </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+                        <div class="ranking-content-item">
+                            <div class="raking-item-header">
+                                Luxury Hybrid and Electric Cars
+                            </div>
+                            <div class="ranking-item-list">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"> <span>#1</span> 2020 Tesla Model S </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#2</span> 2020 Tesla Model 3 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span>#3</span> 2021 Polestar 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="see-full-ranking">SEE Full RANKINGS »</a>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-5 browse__side">
+                <div class="browse__side-header">Browse Cars</div>
+                <div class="browse__side-list">
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-SmallCars.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Small Cars</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-MidsizeCars.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Midsize Cars</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-LargeCars.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Large Cars</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-SUVs.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">SUVs</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-Crossovers.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Crossovers</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-Trucks.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Trucks</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-Hybrids.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Hybrids</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-Vans.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Vans</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-CPOs.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">CPO</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-Luxury.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Luxury</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-SportsCars.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Sports Cars</div>
+                    </a>
+                    <a href="" class="browse__side-item">
+                        <img src="../resources/img/Jellybeans-Convertibles.jpg" alt="" class="browse-item-img">
+                        <div class="browse-item-text">Convertibles</div>
+                    </a>
+                </div>
+                <div class="browse__side-footer">
+                    Browse all mode <span> » </span>
+                </div>
+            </div>
         </div>
     </div>
 

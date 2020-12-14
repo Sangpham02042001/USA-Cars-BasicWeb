@@ -1,3 +1,26 @@
+@mixin link__gray-hover {
+  transition: color 0.4s;
+  &:hover {
+    color: rgb(133, 129, 129);
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 .car-ranking-container {
   padding: 0;
 }
@@ -28,6 +51,7 @@
 
 .how-rank {
   padding: 10px 0;
+  margin-bottom: 20px;
   a {
     color: #000000;
     text-transform: uppercase;
@@ -77,9 +101,11 @@
   .car-link-img {
     color: black;
     display: block;
+    outline: none;
     text-align: center;
     border: 1px solid rgb(204, 204, 204);
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px rgb(204, 204, 204);
     padding: 10px 10px 5px 10px;
@@ -102,6 +128,11 @@
       border-bottom-right-radius: 0;
     }
   }
+}
+
+.ranking-content-left {
+  display: none;
+  animation: fadeEffect 1s;
 }
 
 .ranking-content-header {
@@ -160,5 +191,139 @@
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 600;
+  }
+}
+
+.browse__side {
+  padding: 20px;
+  border: 1px solid rgb(211, 208, 208);
+  height: 400px;
+  background-color: white;
+}
+
+.browse__side-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.browse__side-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+}
+
+.browse__side-item {
+  color: black;
+  @include link__gray-hover;
+  text-align: center;
+}
+
+.browse-item-img {
+  // width: 100%;
+  height: 40px;
+  max-width: 130px;
+}
+
+.browse-item-text {
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.browse__side-footer {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  span {
+    font-size: 1.4rem;
+    position: relative;
+    top: -1px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .car-ranking-container {
+    min-width: 98%;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .header {
+    .header__list {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .car-ranking-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ranking-content-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ranking-header {
+    h1 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  .how-rank {
+    font-size: 1.2rem;
+  }
+  .ranking-content-header {
+    font-size: 2rem;
+  }
+  .car-list-img {
+    min-width: 60%;
+    width: 70%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    .car-link-img {
+      img {
+        width: 80px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .car-ranking-list {
+    padding: 0;
+    .car-ranking-item {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ranking-content-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ranking-content-item {
+    .raking-item-header {
+      font-size: 1.6rem;
+    }
+    ul {
+      li {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .ranking-content-list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
