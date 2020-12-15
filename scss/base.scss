@@ -581,6 +581,13 @@ ul {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .header {
+    ul.header__list {
+      display: none;
+    }
+  }
+}
 @media only screen and (max-width: 1280px) {
   footer {
     .footer__list {
@@ -631,12 +638,14 @@ ul {
       flex-direction: column;
       .footer__list-item {
         display: flex;
+        align-items: center;
         justify-content: center;
-        padding: 10px 0;
+        flex-direction: column;
         p {
           display: none;
         }
         .footer__col_header {
+          padding: 10px 0;
           display: block;
         }
         .footer__list-col {

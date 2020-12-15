@@ -1525,7 +1525,8 @@ footer {
     margin-bottom: 10px;
     .modal__header-link {
       @include header_link_hover;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 600;
     }
     span {
       position: absolute;

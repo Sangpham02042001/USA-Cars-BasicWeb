@@ -1493,7 +1493,8 @@ footer .footer .footer__logo i {
   margin-bottom: 10px;
 }
 .modal-content .modal__header .modal__header-link {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 .modal-content .modal__header .modal__header-link:hover {
   color: #ccc9c9;
