@@ -1104,24 +1104,19 @@ for (var i in newmainJSON) {
 // }
 
 var selectItemHeading = document.querySelectorAll(".select-item-heading");
-// var concac = document.querySelectorAll(".main__content-item");
-// console.log(selectItemHeading);
-// console.log(concac);
 for (let i = 0; i < selectItemHeading.length; i++) {
     $(selectItemHeading[i]).on("click", function () {
         $(this.querySelector("span i")).toggleClass("rotate");
-        $(selectItemHeading[i].querySelector(".select__side-list")).toggle(500);
+        // $(selectItemHeading[i].querySelector(".select__side-list")).toggle(500);
         $(document.querySelectorAll(".select__side-list")[i]).animate({
             height: 'toggle'
         });
-        console.log("cac");
     })
 }
 
 var makeListCheck = false;
 
 document.querySelector(".show__all-select").addEventListener("click", function () {
-    console.log("cac");
     var show_make_text;
     var arrow;
     if (makeListCheck === false) {
