@@ -1,0 +1,411 @@
+@mixin link_hover {
+  color: black;
+  transition: color 0.3s;
+  &:hover {
+    color: rgb(110, 108, 108);
+  }
+}
+
+.car-link {
+  @include link_hover;
+  padding: 20px 0;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: gray;
+}
+
+.best-deal-header {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.author {
+  .author-name {
+    @include link_hover;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  font-size: 1rem;
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.best-deal-note {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.best-deal-readmore {
+  display: block;
+  @include link_hover;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  i {
+    position: relative;
+    font-size: 1.4rem;
+    top: -2px;
+  }
+  margin-bottom: 30px;
+}
+
+.find-best-price {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-top: 2px solid rgb(110, 108, 108);
+  border-bottom: 2px solid rgb(110, 108, 108);
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.4rem;
+    .fa-home {
+      color: blue;
+      font-size: 1.4rem;
+      margin-right: 8px;
+    }
+    b {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.learn-more1 {
+  font-size: 1.4rem;
+  @include link_hover;
+  color: rgb(43, 43, 243);
+}
+
+.find-price-select {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  width: 100%;
+  select {
+    padding: 10px;
+    font-size: 1.2rem;
+    option {
+      font-size: 1.2rem;
+    }
+  }
+  input {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: rgb(196, 33, 42);
+    transition: color 0.3s;
+    box-shadow: rgb(166, 28, 30) 0px -3px 0px inset;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgb(163, 13, 16);
+    }
+  }
+}
+
+.learn-more2 {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include link_hover;
+}
+
+.car-brand-header {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.car-brand-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  .car-brand-item {
+    a {
+      font-size: 1.8rem;
+      @include link_hover;
+    }
+  }
+}
+
+.car-classify {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+  .car-classify-item {
+    a {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      @include link_hover;
+    }
+  }
+}
+
+.car-deals {
+  margin-top: 30px;
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .car-deals-list-des {
+    padding: 15px 0;
+    font-size: 1rem;
+    color: rgb(110, 108, 108);
+    font-style: italic;
+  }
+}
+
+.car-deals-item {
+  margin: 15px 0;
+  position: relative;
+  padding: 15px;
+  box-shadow: rgba(17, 17, 17, 0.3) 0px 0px 3px;
+  .deal-item-content {
+    display: flex;
+    margin-bottom: 10px;
+    .deal-item-img {
+      max-width: 180px;
+      max-height: 180px;
+    }
+    .deal-item-main {
+      padding-left: 20px;
+      a {
+        @include link_hover;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .deal-main-header {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .deal-main-text {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        span {
+          font-size: 1.2rem;
+          color: rgb(110, 108, 108);
+        }
+      }
+    }
+  }
+  .deal-item-price {
+    font-size: 1.4rem;
+    color: rgb(110, 108, 108);
+    span {
+      margin-left: 5px;
+      color: #000000;
+      font-weight: 600;
+      text-decoration: line-through;
+      font-size: 1.6rem;
+    }
+  }
+  .deal-item-form {
+    input {
+      max-width: 60px;
+      padding: 5px;
+      font-size: 1.2rem;
+    }
+    button {
+      background: rgb(196, 33, 42);
+      font-size: 1.4rem;
+      background-color: rgb(166, 28, 30) 0px -3px 0px inset;
+      font-weight: 600;
+    }
+  }
+}
+
+.car-deal-side {
+  padding: 15px;
+  border: 1px solid rgb(173, 171, 171);
+  p {
+    font-size: 1.3rem;
+  }
+  h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+.deal-side-header {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.deals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .deal-side-button {
+    background-color: rgb(61, 61, 243);
+    padding: 8px 10px;
+    display: flex;
+    margin: 3px;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: color 0.3s;
+    font-size: 1.3rem;
+    box-shadow: rgb(22, 77, 153) 0px -3px 0px inset;
+    &:hover {
+      color: #ffffff;
+      background-color: blue;
+    }
+  }
+}
+
+.side-brand-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  a {
+    @include link_hover;
+    font-size: 1.4rem;
+  }
+  &:last-child() {
+    font-weight: 600;
+  }
+}
+
+.deal-side-advertise {
+  margin: 20px 0;
+  border: 1px solid rgb(167, 165, 165);
+}
+
+.side-advertise-header {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  img {
+    height: 80px;
+  }
+}
+.side-advertise-main {
+  padding: 10px;
+  h3 {
+    font-weight: 600;
+  }
+}
+
+.side-advertise-content {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    li {
+      a {
+        @include link_hover;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  img {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .best-deal-header {
+    font-size: 2.4rem;
+  }
+  .best-deal-note {
+    font-size: 1.4rem;
+  }
+  .best-deal-readmore {
+    font-size: 1.4rem;
+  }
+  .car-brand-header {
+    font-size: 2rem;
+  }
+  .car-brand-list .car-brand-item a {
+    font-size: 1.4rem;
+  }
+  .best-deal-container {
+    max-width: 98%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .car-deals-item {
+    .deal-item-content {
+      .deal-item-img {
+        max-height: 100px;
+      }
+      .deal-item-main {
+        a {
+          font-size: 1.8rem;
+          margin-bottom: 0;
+        }
+        .deal-main-header {
+          font-size: 1.4rem;
+        }
+        .deal-main-text {
+          display: none;
+        }
+      }
+    }
+  }
+  .find-best-price h3 {
+    font-size: 1.8rem;
+  }
+  .learn-more2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .car-classify {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .car-brand-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .car-deals {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+  .car-deals-item {
+    padding-bottom: 20px;
+    .deal-item-content {
+      .deal-item-img {
+        max-height: 80px;
+      }
+      .deal-item-main {
+        a {
+          font-size: 1.4rem;
+        }
+        .deal-main-header {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .deal-item-price {
+      font-size: 1rem;
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  .find-price-select {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .deal-item-form {
+    display: none;
+  }
+}

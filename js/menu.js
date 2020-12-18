@@ -64,7 +64,7 @@ customElements.define("custom-menu", class extends HTMLElement {
                     </div>
                 </li>
                 <li class="header__list-item">
-                    <a href="" class="header__list-item-link">Best Car Deals</a>
+                    <a href="../html/bestcardeals.html" class="header__list-item-link">Best Car Deals</a>
                     <div class="header__item-dropdown">
                         <a href="" class="header__dropdown-item">New Car Deals</a>
                         <a href="" class="header__dropdown-item">Used Car Deals</a>
