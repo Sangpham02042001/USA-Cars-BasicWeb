@@ -3,10 +3,10 @@ customElements.define("custom-menu", class extends HTMLElement {
         this.innerHTML = `
             <link rel="stylesheet" href="../css/base.css">
             <header class="header">
-            <a href="../html/index.html" class="header__img_link">
+            <a href="../index.html" class="header__img_link">
                 <img src="../resources/img/usn-logo-large.png" alt="" class="header__img">
             </a>
-            <a href="../html/index.html" class="header__title">
+            <a href="../index.html" class="header__title">
                 CARS
                 <span class="header__title_span"> » </span>
             </a>
@@ -96,7 +96,7 @@ customElements.define("custom-menu", class extends HTMLElement {
             <div class="modal2">
         <div class="modal-content">
             <div class="modal__header">
-                <a href="../html/index.html" class="modal__header-link">CARS</a>
+                <a href="../index.html" class="modal__header-link">CARS</a>
                 <span>&times;</span>
             </div>
             <select name="make" class="make2">
