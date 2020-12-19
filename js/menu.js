@@ -312,6 +312,9 @@ function ModalLink(abc) {
     document.querySelector(".modal__details-header").textContent = "";
     document.querySelector(".modal__details-header").appendChild(t);
     var href = abc.split(" ").join("").toLowerCase();
+    if (href === "carsforsale") {
+        href = "carrankings";
+    }
     document.querySelector(".modal__details-header").setAttribute("href", "../html/" + href + ".html");
     $(".modal__details-list").find('li').remove();
     for (let i = 0; i < modalJSON[abc].length; i++) {
@@ -352,13 +355,7 @@ $(document).ready(function () {
         $("#zipcode").css("display", "block");
         $(".year").css("display", "none");
     })
-    // $(".browse__style-item-img").on("click", function () {
-    //     if (document.body.offsetWidth < 980) {
-    //         return;
-    //     }
-    //     $("#modal").css("display", "block");
-    //     modalImg.src = this.src;
-    // })
+
     $("#modal .close").on("click", function () {
         $("#modal").css("display", "none");
     });

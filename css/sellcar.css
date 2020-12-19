@@ -1,0 +1,264 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.sell-car-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.sell-car-node {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: 20px 0;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.sell-car-node .text {
+  display: flex;
+  font-size: 1.6rem;
+}
+.sell-car-node .text a {
+  color: black;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.sell-car-node .text p {
+  margin-bottom: 0;
+  color: gray;
+}
+.sell-car-node .contact {
+  display: flex;
+}
+.sell-car-node .contact li {
+  display: block;
+  margin: 0 10px;
+}
+.sell-car-node .contact li a {
+  color: gray;
+}
+.sell-car-node .contact li a i {
+  font-size: 1.6rem;
+}
+
+img.sell-car-img {
+  width: 100%;
+  margin: 25px 0;
+}
+
+p.sell-car-text {
+  font-size: 1.6rem;
+}
+
+.sell-list-link li {
+  margin: 10px 0;
+}
+.sell-list-link li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: color 0.2s;
+  color: #115abf;
+}
+.sell-list-link li a:hover {
+  color: #092957;
+}
+
+.sell-main-item h1,
+.sell-main-item h3 {
+  font-weight: 600;
+}
+
+.sell-car-container .car_buying-advice {
+  margin-bottom: 30px;
+}
+.sell-car-container .car_buying-advice .car_advice-heading {
+  position: relative;
+  display: flex;
+}
+.sell-car-container .car_buying-advice .car_advice-heading .car_advice-header {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.sell-car-container .car_buying-advice .car_advice-heading .car_advice-header::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--red-color);
+  position: absolute;
+  top: 0;
+  left: -0.2%;
+}
+.sell-car-container .car_buying-advice .car_advice-heading .car_advice-link {
+  position: absolute;
+  color: black;
+  font-size: 1.6rem;
+  right: 10px;
+  top: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sell-car-container .car_buying-advice .car_advice-heading .car_advice-link span {
+  font-size: 1.4rem;
+}
+.sell-car-container .car_buying-advice .car_advice-heading .car_advice-link:hover {
+  color: #757373;
+}
+.sell-car-container .car_buying-advice .car_advice-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list h1 {
+  color: var(--white-color);
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list h1:hover {
+  color: #dbd8d8;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large {
+  cursor: pointer;
+  padding: 20px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 380px;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 3px 2px #757373;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text p {
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+  display: block;
+  transition: color 0.4s;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text p:hover {
+  color: #dbd8d8;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list {
+  display: flex;
+  justify-content: space-between;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 48%;
+  color: var(--white-color);
+  font-size: 3rem;
+  font-weight: 600;
+  height: 270px;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small .car_advice_img-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small:hover {
+  color: #dbd8d8;
+}
+
+@media only screen and (max-width: 1224px) {
+  .sell-car-heading {
+    font-size: 2.4rem;
+  }
+
+  .sell-car-container {
+    max-width: 98%;
+  }
+  .sell-car-container .car_buying-advice {
+    overflow: auto;
+    width: 1700px;
+    max-width: 100%;
+    display: block;
+  }
+  .sell-car-container .car_buying-advice .car_advice-heading .car_advice-header {
+    font-size: 2rem;
+  }
+  .sell-car-container .car_buying-advice .car_advice-heading .car_advice-link {
+    font-size: 1.4rem;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content {
+    overflow: auto;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content .car_advice-list {
+    width: 840px;
+    flex-direction: row;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large {
+    width: 270px;
+    height: 270px;
+    margin-right: 15px;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text {
+    left: 20px;
+    bottom: 20px;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text p {
+    font-size: 1.2rem;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice_img-large .car_advice_img-text h1 {
+    font-size: 2rem;
+  }
+  .sell-car-container .car_buying-advice .car_advice-content .car_advice-list .car_advice-img-list .car_advice_img-small {
+    width: 270px;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sell-main-item h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sell-car-heading {
+    font-size: 1.6rem;
+  }
+
+  p.sell-car-text {
+    font-size: 1.2rem;
+  }
+
+  .sell-list-link li a {
+    font-size: 1.4rem;
+  }
+
+  .sell-main-item h1 {
+    font-size: 1.6rem;
+  }
+  .sell-main-item h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=sellcar.css.map */
